@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99E688ED-51AE-4B56-BD33-70316DCF115D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AtlasUI_NetbookLauncher.My.MyApplication</StartupObject>
+    <RootNamespace>AtlasUI_NetbookLauncher</RootNamespace>
+    <AssemblyName>AtlasUI-NetbookLauncher</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>Resources\atlasicon.ico</ApplicationIcon>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AtlasUI-NetbookLauncher.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AtlasUI-NetbookLauncher.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accessories.Designer.vb">
+      <DependentUpon>Accessories.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accessories.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddictingGames.designer.vb">
+      <DependentUpon>AddictingGames.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddictingGames.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AntiSpyware.designer.vb">
+      <DependentUpon>AntiSpyware.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AntiSpyware.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bespin.designer.vb">
+      <DependentUpon>Bespin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bespin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buggy.Designer.vb">
+      <DependentUpon>Buggy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Buggy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendar.designer.vb">
+      <DependentUpon>Calendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Credits.Designer.vb">
+      <DependentUpon>Credits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Credits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesktopMode.Designer.vb">
+      <DependentUpon>DesktopMode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopMode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeveloperModule.designer.vb">
+      <DependentUpon>DeveloperModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeveloperModule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiskBurn.designer.vb">
+      <DependentUpon>DiskBurn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DiskBurn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donate.Designer.vb">
+      <DependentUpon>Donate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Donate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FireWall.designer.vb">
+      <DependentUpon>FireWall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FireWall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games.Designer.vb">
+      <DependentUpon>Games.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Games.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GCPEditor.Designer.vb">
+      <DependentUpon>GCPEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GCPEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graphics.Designer.vb">
+      <DependentUpon>Graphics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Graphics.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuestAccount.designer.vb">
+      <DependentUpon>GuestAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GuestAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Internet.Designer.vb">
+      <DependentUpon>Internet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Internet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JavaScript.designer.vb">
+      <DependentUpon>JavaScript.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JavaScript.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinuxCompatibility.designer.vb">
+      <DependentUpon>LinuxCompatibility.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LinuxCompatibility.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Myna.Designer.vb">
+      <DependentUpon>Myna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Myna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetbookUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetbookUI.Designer.vb">
+      <DependentUpon>NetbookUI.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Office.Designer.vb">
+      <DependentUpon>Office.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Office.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pheonix.Designer.vb">
+      <DependentUpon>Pheonix.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pheonix.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PHP.designer.vb">
+      <DependentUpon>PHP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PHP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pogo.designer.vb">
+      <DependentUpon>Pogo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pogo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuickPad.designer.vb">
+      <DependentUpon>QuickPad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuickPad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoundAndVideo.Designer.vb">
+      <DependentUpon>SoundAndVideo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SoundAndVideo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompSystem.Designer.vb">
+      <DependentUpon>CompSystem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CompSystem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suspend.designer.vb">
+      <DependentUpon>Suspend.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Suspend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysInfo.designer.vb">
+      <DependentUpon>SysInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SysInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="W3Schools.designer.vb">
+      <DependentUpon>W3Schools.vb</DependentUpon>
+    </Compile>
+    <Compile Include="W3Schools.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebBrowser.designer.vb">
+      <DependentUpon>WebBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WebBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebBrowserSourceCode.Designer.vb">
+      <DependentUpon>WebBrowserSourceCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WebBrowserSourceCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.designer.vb">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XmlEditor.designer.vb">
+      <DependentUpon>XmlEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XmlEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accessories.resx">
+      <DependentUpon>Accessories.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddictingGames.resx">
+      <DependentUpon>AddictingGames.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AntiSpyware.resx">
+      <DependentUpon>AntiSpyware.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bespin.resx">
+      <DependentUpon>Bespin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buggy.resx">
+      <DependentUpon>Buggy.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar.resx">
+      <DependentUpon>Calendar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompSystem.resx">
+      <DependentUpon>CompSystem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Credits.resx">
+      <DependentUpon>Credits.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesktopMode.resx">
+      <DependentUpon>DesktopMode.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeveloperModule.resx">
+      <DependentUpon>DeveloperModule.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiskBurn.resx">
+      <DependentUpon>DiskBurn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donate.resx">
+      <DependentUpon>Donate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FireWall.resx">
+      <DependentUpon>FireWall.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games.resx">
+      <DependentUpon>Games.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCPEditor.resx">
+      <DependentUpon>GCPEditor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graphics.resx">
+      <DependentUpon>Graphics.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuestAccount.resx">
+      <DependentUpon>GuestAccount.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internet.resx">
+      <DependentUpon>Internet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JavaScript.resx">
+      <DependentUpon>JavaScript.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinuxCompatibility.resx">
+      <DependentUpon>LinuxCompatibility.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Myna.resx">
+      <DependentUpon>Myna.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetbookUI.resx">
+      <DependentUpon>NetbookUI.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Office.resx">
+      <DependentUpon>Office.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pheonix.resx">
+      <DependentUpon>Pheonix.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PHP.resx">
+      <DependentUpon>PHP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pogo.resx">
+      <DependentUpon>Pogo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickPad.resx">
+      <DependentUpon>QuickPad.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoundAndVideo.resx">
+      <DependentUpon>SoundAndVideo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suspend.resx">
+      <DependentUpon>Suspend.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysInfo.resx">
+      <DependentUpon>SysInfo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="W3Schools.resx">
+      <DependentUpon>W3Schools.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebBrowser.resx">
+      <DependentUpon>WebBrowser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebBrowserSourceCode.resx">
+      <DependentUpon>WebBrowserSourceCode.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlEditor.resx">
+      <DependentUpon>XmlEditor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\5x5atlaslogowhite.png" />
+    <Content Include="Resources\application-vnd.ms-excel.png" />
+    <Content Include="Resources\application-vnd.ms-powerpoint.png" />
+    <Content Include="Resources\atlasicon.ico" />
+    <Content Include="Resources\atlasLOGO-Transparent.png" />
+    <None Include="app.config" />
+    <None Include="Resources\Atlas_UI_Wallpaper_by_Twarrior.png" />
+    <None Include="Resources\Command.png" />
+    <Content Include="Resources\documentation.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\donate.gif" />
+    <Content Include="Resources\format-text-bold.png" />
+    <Content Include="Resources\format-text-color.png" />
+    <Content Include="Resources\format-text-italic.png" />
+    <Content Include="Resources\format-text-strikethrough.png" />
+    <Content Include="Resources\format-text-underline.png" />
+    <None Include="Resources\html.png" />
+    <Content Include="Resources\GCP-HTML.png" />
+    <None Include="Resources\javascript.png" />
+    <Content Include="Resources\mail-message.png" />
+    <None Include="Resources\Music.png" />
+    <Content Include="Resources\network-wireless.png" />
+    <None Include="Resources\Resource-Hacker.png" />
+    <None Include="Resources\php.png" />
+    <Content Include="Resources\splashscreen.jpg" />
+    <None Include="Resources\system-help.png" />
+    <None Include="Resources\System1.png" />
+    <None Include="Resources\Symbol-Help.png" />
+    <None Include="Resources\xml.png" />
+    <None Include="Resources\tools-report-bug1.png" />
+    <Content Include="Support-Idea.html" />
+    <Content Include="Resources\systemhelp.png" />
+    <Content Include="Resources\tab-new-background.png" />
+    <None Include="Resources\Terminal.png" />
+    <Content Include="Resources\tools-report-bug.png" />
+    <Content Include="Resources\utilities-terminal.png" />
+    <None Include="Resources\System.png" />
+    <None Include="Resources\HP-MediaPlayer.png" />
+    <None Include="Resources\office v3.png" />
+    <None Include="Resources\dossier-internet.png" />
+    <None Include="Resources\Graphics.png" />
+    <None Include="Resources\gamepad.png" />
+    <None Include="Resources\Misc-Stuff.png" />
+    <None Include="Resources\Tick %282%29.png" />
+    <None Include="Resources\WordSZ.png" />
+    <None Include="Resources\go-home.png" />
+    <None Include="Resources\page-zoom.png" />
+    <None Include="Resources\media-playback-start.png" />
+    <None Include="Resources\view-refresh.png" />
+    <None Include="Resources\media-playback-stop.png" />
+    <None Include="Resources\view-close.png" />
+    <None Include="Resources\media-seek-forward.png" />
+    <None Include="Resources\media-seek-backward.png" />
+    <None Include="Resources\Internet-ShortcutSZ.png" />
+    <None Include="Resources\Notepad1.png" />
+    <None Include="Resources\Notepad.png" />
+    <None Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

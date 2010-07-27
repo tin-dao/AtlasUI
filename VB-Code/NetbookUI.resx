@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>180, 17</value>
+  </metadata>
+  <data name="TextBox1.Text" xml:space="preserve">
+    <value>Welcome to AtlasUI v0.25, as you see, we have done some major renovations to this software.
+
+The GUI redesign was initiated due to the need for AtlasUI to accomodate smaller screen and seem less complex than it really is.
+
+So I listened and I have changed it. When you load AtlasUI version 0.25 or above, you will now see the new, extremely simple layout. Please keep in mind, this software is still in beta,
+therefore it may still have bugs, however I strongly feel that this GUI will ensure less bugs now, and in the future.
+
+If you are a desktop user or large laptop user, you may go up to the icon in the upper left hand corner and Switch to Desktop Mode!
+
+ Enjoy your experience with AtlasUI,
+ Joshua Strobl</value>
+  </data>
+  <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>295, 17</value>
+  </metadata>
+  <metadata name="BackgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>90</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAD///8B////Af///wH///8B////Af///wEAAAADAAAAAwAAAAP///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af/KbAP7x2oL9MBlFffBZSHsuWENqoVGA////wH///8B////Af//
+        /wH///8B////Af///wH///8B////AfvJbgnuwm0368JvV/TIcGP5xGdl/cZoVf/IaS3/yGkR/8hpA//I
+        aQn/yGof/8hpJf/IaRP///8B////Af7IaQP4ynAvy6tnt5V3PuupiT3voHYo75huJee+kUK95rNaa/zF
+        Zx/JoFhHcFs0s2dTL72sjE9l////Af///wH+x2kX7LldeculVeuXcR3/oH0Y/7OHH/+YYwj/hlgJ/Zlv
+        J+HmtFx7rIpNoyseEfc7LRrrtZFRZf///wH/yGkF/MVmS72KMtG6jSj9vp0v/5x9EP/DnjD/snkR/59n
+        Cf+LWwn9vJA/34xxQekoGw7/blgyxderXC3///8B/8hqDe+6YIeqdh3ztIIV/8moP/+ccBT/rIQr/8mO
+        H/+zeA3/pnAN/8CUOf14XjH9OioW/bCNTofqumMN/8lrBe3BcDPsxn7JxpY6/apxDf/Nnzv/rH0l/6Z6
+        Iv/YqTT/4scv/8ejLv+GYhz/e1wu/25VLuvSp1k7/cZpA9OoXDOvkFWn4cKE8+GySf/Aihf/y5w1/7iM
+        M/+fbxj/rIow/7KeKP+ngiH/f1sc/4BgMP2Xd0G77r1lFf///wG2lVp9alg68bOWXPXDoEz9uJQt/6mH
+        L/+edSb/lGMP/5twHv/JqEH/xaFC/4BdIf9/YTLxx6BZbf/IaAX///8B2rJpO7OXZJWzmWjDzK5w476d
+        Ufu+mz7/xJ5F/4ZdF/98WRb/yJ02/62FMf+GYy3/imw70/PCajP///8B////Af/IaQP/yGkL/stvJfrL
+        c2PcsWPHrII396yEMf+Kay7/Vz0P/7GRSv+jf0L/cFMu+6+MTpf/yGgN////Af///wH///8B////Af/I
+        aQP+x2kT+cRpR+a3ZJPcs2fHw6Zs8YxuQP96XTX/Ykcs/2tRMOXLoFhR/8hpA////wH///8B////Af//
+        /wH///8B////Af/IaAf/yGkZ/8ptM9q3c42Te1brXEk3/2ZONvOjgEqd5bZjG////wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af/IaQP2xW4R5rprQ9euZm/SqGJX47VkHfnEaAP///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af7IagP/ym0F/8lrBf///wH///8B////Af//
+        /wH///8BAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//w==
+</value>
+  </data>
+</root>
