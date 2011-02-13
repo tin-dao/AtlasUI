@@ -1,14 +1,9 @@
 This is a readme file for Atlas Open Source Development Team's AtlasUI project.
 
 What is AtlasUI?
-The AtlasUI (Atlas User Interface) is, in essence, a cover for Atlas Members running Windows, to familiarize themselves with the GNOME and KDE interface. This software will also allow the user to do things such as surf the web, write documents, play games, etc.
+The AtlasUI (Atlas User Interface) is a transitional software for Windows users to familiarize themselves with common Linux environments.
 
-This software is created as a solution for Windows users that will not want to switch over to the Linux distribution.
+Licensed under FreeSoft Licensing: http://freesoft.aosdt.org
 
-Want to report a bug?
-
-Go to http://aosdt.globalcommunityportal.com/?q=forum/14
-
-Licensed under FreeSoft Licensing: http://globalcommunityportal.com/freesoft
-Developed primarily by the Atlas Open Source Development Team:
-http://aosdt.globalcommunityportal.com/
+Developed by the Atlas Open Source Development Team:
+http://aosdt.org
