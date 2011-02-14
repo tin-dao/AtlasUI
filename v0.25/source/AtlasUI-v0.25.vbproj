@@ -29,7 +29,6 @@
     <ProductName>AtlasUI</ProductName>
     <PublisherName>AOSDT</PublisherName>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <AutorunEnabled>true</AutorunEnabled>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>0.2.5.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>

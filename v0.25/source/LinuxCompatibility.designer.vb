@@ -41,7 +41,8 @@ Partial Class LinuxCompatibility
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(845, 464)
         Me.Controls.Add(Me.WebBrowser1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximumSize = New System.Drawing.Size(1000, 850)
         Me.Name = "LinuxCompatibility"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False

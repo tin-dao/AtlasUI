@@ -31,7 +31,7 @@ Partial Class Raven
         Me.WebBrowser1.Location = New System.Drawing.Point(0, 0)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(880, 381)
+        Me.WebBrowser1.Size = New System.Drawing.Size(986, 597)
         Me.WebBrowser1.TabIndex = 0
         Me.WebBrowser1.Url = New System.Uri("http://www.aviary.com/online/vector-editor", System.UriKind.Absolute)
         '
@@ -39,9 +39,10 @@ Partial Class Raven
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(880, 381)
+        Me.ClientSize = New System.Drawing.Size(986, 597)
         Me.Controls.Add(Me.WebBrowser1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximumSize = New System.Drawing.Size(1000, 850)
         Me.Name = "Raven"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False

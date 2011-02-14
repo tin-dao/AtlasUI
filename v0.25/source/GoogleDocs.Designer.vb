@@ -31,7 +31,7 @@ Partial Class GoogleDocs
         Me.WebBrowser1.Location = New System.Drawing.Point(0, 0)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(642, 306)
+        Me.WebBrowser1.Size = New System.Drawing.Size(896, 395)
         Me.WebBrowser1.TabIndex = 0
         Me.WebBrowser1.Url = New System.Uri("http://docs.google.com", System.UriKind.Absolute)
         '
@@ -39,9 +39,10 @@ Partial Class GoogleDocs
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(642, 306)
+        Me.ClientSize = New System.Drawing.Size(896, 395)
         Me.Controls.Add(Me.WebBrowser1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximumSize = New System.Drawing.Size(1000, 850)
         Me.Name = "GoogleDocs"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False

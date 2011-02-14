@@ -259,7 +259,8 @@ Partial Class Sapphire
         '
         Me.PreferencesToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PreferencesToolStripMenuItem.Name = "PreferencesToolStripMenuItem"
-        Me.PreferencesToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
+        Me.PreferencesToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
+                    Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
         Me.PreferencesToolStripMenuItem.Size = New System.Drawing.Size(222, 22)
         Me.PreferencesToolStripMenuItem.Text = "Preferences"
         '

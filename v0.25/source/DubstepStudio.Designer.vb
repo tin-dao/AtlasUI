@@ -32,7 +32,7 @@ Partial Class DubstepStudio
         Me.WebBrowser1.Location = New System.Drawing.Point(0, 0)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(885, 393)
+        Me.WebBrowser1.Size = New System.Drawing.Size(792, 574)
         Me.WebBrowser1.TabIndex = 0
         '
         'WebBrowser2
@@ -42,7 +42,7 @@ Partial Class DubstepStudio
         Me.WebBrowser2.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser2.Name = "WebBrowser2"
         Me.WebBrowser2.ScriptErrorsSuppressed = True
-        Me.WebBrowser2.Size = New System.Drawing.Size(885, 393)
+        Me.WebBrowser2.Size = New System.Drawing.Size(792, 574)
         Me.WebBrowser2.TabIndex = 1
         Me.WebBrowser2.Url = New System.Uri("http://remixer.clubcreate.com/v2/themusicstudio/launch.html", System.UriKind.Absolute)
         '
@@ -50,10 +50,11 @@ Partial Class DubstepStudio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(885, 393)
+        Me.ClientSize = New System.Drawing.Size(792, 574)
         Me.Controls.Add(Me.WebBrowser2)
         Me.Controls.Add(Me.WebBrowser1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximumSize = New System.Drawing.Size(1000, 800)
         Me.Name = "DubstepStudio"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False

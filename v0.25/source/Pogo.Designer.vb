@@ -33,7 +33,7 @@ Partial Class Pogo
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
         Me.WebBrowser1.ScriptErrorsSuppressed = True
-        Me.WebBrowser1.Size = New System.Drawing.Size(781, 309)
+        Me.WebBrowser1.Size = New System.Drawing.Size(992, 766)
         Me.WebBrowser1.TabIndex = 0
         Me.WebBrowser1.Url = New System.Uri("http://pogo.com", System.UriKind.Absolute)
         '
@@ -51,11 +51,11 @@ Partial Class Pogo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(781, 309)
+        Me.ClientSize = New System.Drawing.Size(992, 766)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.WebBrowser1)
         Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(900, 600)
+        Me.MaximumSize = New System.Drawing.Size(1000, 800)
         Me.Name = "Pogo"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False

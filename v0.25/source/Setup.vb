@@ -8,7 +8,11 @@
         My.Settings.Username = Me.TextBox1.Text
         My.Settings.Password = Me.TextBox2.Text
         My.Settings.Homepage = Me.TextBox4.Text
-        My.Settings.NameOfSystem = Me.TextBox3.Text
+        If (TextBox3.Text = "") Then
+            My.Settings.NameOfSystem = "AtlasUI"
+        Else
+            My.Settings.NameOfSystem = Me.TextBox3.Text
+        End If
         My.Settings.SetupEnabled = "False"
         My.Settings.Save()
         Me.Opacity = 0

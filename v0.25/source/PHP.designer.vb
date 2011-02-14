@@ -22,7 +22,7 @@ Partial Class PHP
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.SuspendLayout()
         '
         'WebBrowser1
@@ -32,7 +32,7 @@ Partial Class PHP
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
         Me.WebBrowser1.ScriptErrorsSuppressed = True
-        Me.WebBrowser1.Size = New System.Drawing.Size(891, 298)
+        Me.WebBrowser1.Size = New System.Drawing.Size(982, 584)
         Me.WebBrowser1.TabIndex = 0
         Me.WebBrowser1.Url = New System.Uri("http://phpanywhere.net/", System.UriKind.Absolute)
         '
@@ -40,8 +40,9 @@ Partial Class PHP
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(891, 298)
+        Me.ClientSize = New System.Drawing.Size(982, 584)
         Me.Controls.Add(Me.WebBrowser1)
+        Me.MaximumSize = New System.Drawing.Size(1000, 850)
         Me.Name = "PHP"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False

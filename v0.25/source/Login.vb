@@ -4,8 +4,7 @@
         If (TextBox1.Text = My.Settings.Username And TextBox2.Text = My.Settings.Password) Then
             Process.Start("taskkill", "/F /IM explorer.exe")
             UI.Show()
-            Me.ShowInTaskbar = False
-            Me.Opacity = 0%
+            Close()
         Else
             If (TextBox1.Text = My.Settings.Username) Then
                 Me.Opacity = 0%
@@ -29,8 +28,7 @@
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         Process.Start("taskkill", "/F /IM AtlasUI.exe")
         Process.Start("taskkill", "/F /IM AtlasUIv0.25.vshost.exe")
-        Me.Close()
-        SplashScreen.Close()
+        Close()
     End Sub
 
     Private Sub Label4_Paint() Handles Label4.Paint

@@ -2,8 +2,15 @@
 
     Private Sub WebBrowser_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.Label1.Text = "1"
-        WebBrowser1.Navigate(My.Settings.Homepage)
-        ToolStripTextBox1.Text = My.Settings.Homepage
+        If (My.Settings.Homepage = "") Then
+            WebBrowserPreferences.Show()
+            WebBrowserPreferences.StartPosition = FormStartPosition.CenterScreen
+            WebBrowser1.Navigate("http://aosdt.org")
+            ToolStripTextBox1.Text = "http://aosdt.org"
+        Else
+            WebBrowser1.Navigate(My.Settings.Homepage)
+            ToolStripTextBox1.Text = My.Settings.Homepage
+        End If
     End Sub
 
     Private Sub WebBrowser_Close() Handles Me.FormClosing

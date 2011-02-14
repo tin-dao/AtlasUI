@@ -5,14 +5,12 @@
     End Sub
 
     Private Sub OpenToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OpenToolStripMenuItem.Click
-        ' Create an OpenFileDialog to request a file to open.
         Dim openFile1 As New OpenFileDialog()
-
-        ' Initialize the OpenFileDialog to look for RTF files.
         openFile1.DefaultExt = "*.rtf"
+        openFile1.AddExtension = "*.txt"
         openFile1.Filter = "RTF Files|*.rtf"
+        openFile1.Filter = "TXT Files|*.txt"
 
-        ' Determine whether the user selected a file from the OpenFileDialog.
         If (openFile1.ShowDialog() = System.Windows.Forms.DialogResult.OK) _
             And (openFile1.FileName.Length > 0) Then
 
@@ -22,18 +20,15 @@
     End Sub
 
     Private Sub SaveToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SaveToolStripMenuItem.Click
-        ' Create a SaveFileDialog to request a path and file name to save to.
         Dim saveFile1 As New SaveFileDialog()
 
-        ' Initialize the SaveFileDialog to specify the RTF extention for the file.
         saveFile1.DefaultExt = "*.rtf"
+        saveFile1.AddExtension = "*.txt"
         saveFile1.Filter = "RTF Files|*.rtf"
-
-        ' Determine whether the user selected a file name from the saveFileDialog.
+        saveFile1.Filter = "TXT Files|*.txt"
         If (saveFile1.ShowDialog() = System.Windows.Forms.DialogResult.OK) _
             And (saveFile1.FileName.Length > 0) Then
 
-            ' Save the contents of the RichTextBox into the file.
             RichTextBox1.SaveFile(saveFile1.FileName)
         End If
     End Sub

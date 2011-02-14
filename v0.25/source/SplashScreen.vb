@@ -1,14 +1,17 @@
-﻿Public Class SplashScreen
+﻿Public NotInheritable Class SplashScreen
 
-    Private Sub SplashScreen_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub SplashScreen_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Timer1.Start()
+    End Sub
+
+    Private Sub Timer1_Tick() Handles Timer1.Tick
+        Timer1.Stop()
         If (My.Settings.SetupEnabled = "True") Then
-            Me.Opacity = 0%
             Setup.Show()
+            Close()
         Else
-            Me.Hide()
-            Me.Opacity = 0%
-            Me.Visible = False
             Login.Show()
+            Close()
         End If
     End Sub
 End Class

@@ -42,6 +42,7 @@ Partial Class Bespin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(921, 373)
         Me.Controls.Add(Me.WebBrowser1)
+        Me.MaximumSize = New System.Drawing.Size(1000, 800)
         Me.Name = "Bespin"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False

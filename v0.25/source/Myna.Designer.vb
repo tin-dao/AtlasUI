@@ -22,7 +22,7 @@ Partial Class Myna
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.SuspendLayout()
         '
         'WebBrowser1
@@ -41,6 +41,7 @@ Partial Class Myna
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(761, 436)
         Me.Controls.Add(Me.WebBrowser1)
+        Me.MaximumSize = New System.Drawing.Size(1000, 850)
         Me.Name = "Myna"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False

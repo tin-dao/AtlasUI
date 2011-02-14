@@ -22,7 +22,7 @@ Partial Class JavaScript
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.SuspendLayout()
         '
         'WebBrowser1
@@ -32,7 +32,7 @@ Partial Class JavaScript
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
         Me.WebBrowser1.ScriptErrorsSuppressed = True
-        Me.WebBrowser1.Size = New System.Drawing.Size(852, 336)
+        Me.WebBrowser1.Size = New System.Drawing.Size(971, 570)
         Me.WebBrowser1.TabIndex = 0
         Me.WebBrowser1.Url = New System.Uri("http://tide4javascript.com/", System.UriKind.Absolute)
         '
@@ -40,8 +40,9 @@ Partial Class JavaScript
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(852, 336)
+        Me.ClientSize = New System.Drawing.Size(971, 570)
         Me.Controls.Add(Me.WebBrowser1)
+        Me.MaximumSize = New System.Drawing.Size(1000, 850)
         Me.Name = "JavaScript"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False

@@ -32,7 +32,7 @@ Partial Class Meebo
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
         Me.WebBrowser1.ScriptErrorsSuppressed = True
-        Me.WebBrowser1.Size = New System.Drawing.Size(920, 342)
+        Me.WebBrowser1.Size = New System.Drawing.Size(948, 561)
         Me.WebBrowser1.TabIndex = 0
         Me.WebBrowser1.Url = New System.Uri("http://meebo.com", System.UriKind.Absolute)
         '
@@ -40,9 +40,10 @@ Partial Class Meebo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(920, 342)
+        Me.ClientSize = New System.Drawing.Size(948, 561)
         Me.Controls.Add(Me.WebBrowser1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximumSize = New System.Drawing.Size(1000, 850)
         Me.Name = "Meebo"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False

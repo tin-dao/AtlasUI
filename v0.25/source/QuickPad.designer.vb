@@ -117,7 +117,6 @@ Partial Class QuickPad
         Me.Controls.Add(Me.RichTextBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.MaximizeBox = False
-        Me.MinimizeBox = False
         Me.Name = "QuickPad"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
