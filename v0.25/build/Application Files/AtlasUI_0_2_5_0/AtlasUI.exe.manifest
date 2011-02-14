@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="0.2.5.0" name="AtlasUI.exe" publicKeyToken="91e6fdf26a45503c" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="AtlasUI" version="0.2.5.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="AtlasUI.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AtlasUI.exe" size="1896960">
+      <assemblyIdentity name="AtlasUI" version="0.2.5.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>z4uOswD4H8dNEHaqjdXJomNezgE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="AtlasUI.exe.config" size="2622">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>G2fZn77JXZlSKSgq+PmLHuaeahw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icon.ico" size="3626">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>2WqvTxIexZVp7qwakVzq8o8kmYE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\AtlasUISetupManager.png" size="19600">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>kS1b0XdBrGfAVZGU7gSlG4/1Eh0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\battery-25tolow.png" size="846">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ytwa9Irc3oWvv4/ccl0v9FOPNkM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\battery-50.png" size="936">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>pGiKaK7eRqKcDOiLE+suU/mkHG4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\battery-75.png" size="1083">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>OsF0UiM3WHoPJfzIQfu8Snm0NDg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\battery-charged.png" size="1166">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>IlPA9uASeB4kCuThFtIEvi7i5Z0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\battery-charging.png" size="1476">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>xnqEvoZW5nhmJXG8/RcbYM+Q9uA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\border.png" size="2025">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>MXuIiIsZ6a4sWuiVHAQJFfNDPnc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\exit.png" size="476">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>bge8HF1PAg4rRwU5jbj9FEMrJm4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\home.png" size="801">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>29Vy+Ev3ITy+qLtpp7qK/O+8D/E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\icon.png" size="1725">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>jjhlOIzi5ow2ZW55mpdUHFReAMc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\input.png" size="581">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>CjUfEc/uetlSfV7nCO+/ALxPyTQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\minimize.png" size="278">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Vr94YLUPyeeejxv0guIg/43Kzug=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\network-offline.png" size="1204">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>P4icPa/4UPRd+wN0iGqrUz/J0qU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\plasmadesktop.png" size="2613">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9XcH1YqkktptFG8of2GvMGLR1DM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\poweroff.png" size="1640">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>JQOKHorV0IhZGgutSzaQn0mRzwQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Sapphire\add-tab.png" size="717">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>1RaWStZWun25p6pGIozL4p8G0es=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Sapphire\back.png" size="850">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>8M78a7OmLTiHcc31epwbSItIWqc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Sapphire\forward.png" size="881">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>/jYUMvhQISPV5BZ8iG32YRi7g1w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Sapphire\home.png" size="1095">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>EtvWT9tInOkiM7hteNxpKw+7ffg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Sapphire\icon.ico" size="4286">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KwndbDfFTvi2Hrx8/D8D0FLSITY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Sapphire\LargeSapphireLogo.png" size="35752">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>NdeGmHi6GkBjzOkKX07Ic3Unwz8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Sapphire\refresh.png" size="1107">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>KU0DeNC0eyF/i+it2assr2zO1nk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Sapphire\search.png" size="1705">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>bs9XKW3EMFBTY0XWo1Oi0TlxO2Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Sapphire\stop.png" size="1228">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>OFqGHa+9BiIv+G0OANKYQM9HAZk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Sapphire\tool.png" size="953">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Lx61DfxxPPQJoWvBbDpM1qLR3sA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\SplashScreen.png" size="174066">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>o9QfTCd6eZVxYqZb3KZOcX2JouQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OtherSoftware\Minesweeper.exe" size="20202422">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TrJiz4CyY2kOY503nA2zBsfpbj8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=D43STZB1\Lorena Walker" issuerKeyHash="1672f0dc3b69d4b0c676c13d76e5aadcc0dfe038" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>O/IldZbYkiCIhJiobp+Zx2IiXAo=</DigestValue></Reference></SignedInfo><SignatureValue>kLrW5L2yS5VCWn6lbtSsFwPsS9eS449qdYSkHQrXqp6UZeGL5fkUhNi1oRdFzZMiXwdUxOuzCvTwOSKd1mS8LdL4xrEkPd+9xLMZWfD6XRGgJj4yhUV2VRe7GvB6QPTTNZSZMghxmoMs1md0Y7MpSfuVmkP6s8cQi/Ukzj1Yqws=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>2pWSkUDaeTIMcmPYdNmbUA/Gy0TkGkJlXviaUD/m1PY06jqOroVl0d5Jc/CIvHDKvmaqVzz+4sO13cXIcC3SWx9aIvFyIOFmjnBH25xnNcE6/79XdN232dx+V9AhXjB1e1oWyeS8x7duH/8VycDfGGL7RkJssFZdsvmsODbO2u8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="0a5c2262c7999f6ea89884882092d8967525f23b" Description="" Url=""><as:assemblyIdentity version="0.2.5.0" name="AtlasUI.exe" publicKeyToken="91e6fdf26a45503c" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=D43STZB1\Lorena Walker</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>NlZ/CWOYR5LUcBAZ/yf7aUgpk0g=</DigestValue></Reference></SignedInfo><SignatureValue>SSArkUrYxbmSHTs8oEewM9CypYnv/t9HXm9L+fwPEfbp3LlbpRicL5Wb4q1hs6x2qBGF6Vi4Lorp6qygx9+g+pZuJmiA05cz0KfRffgpNb+1eiJQwYxFyB7WDZ1tCrcbB3KcM7qBIntfBbQEz7pvWhDByldhO1ZZGpoBRo6JmnE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>2pWSkUDaeTIMcmPYdNmbUA/Gy0TkGkJlXviaUD/m1PY06jqOroVl0d5Jc/CIvHDKvmaqVzz+4sO13cXIcC3SWx9aIvFyIOFmjnBH25xnNcE6/79XdN232dx+V9AhXjB1e1oWyeS8x7duH/8VycDfGGL7RkJssFZdsvmsODbO2u8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVagAwIBAgIQES/XR+XzMbxO/BlRotgJDjAJBgUrDgMCHQUAMDcxNTAzBgNVBAMeLABEADQAMwBTAFQAWgBCADEAXABMAG8AcgBlAG4AYQAgAFcAYQBsAGsAZQByMB4XDTExMDIxNDAyNDA0NFoXDTEyMDIxNDA4NDA0NFowNzE1MDMGA1UEAx4sAEQANAAzAFMAVABaAEIAMQBcAEwAbwByAGUAbgBhACAAVwBhAGwAawBlAHIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANqVkpFA2nkyDHJj2HTZm1APxstE5BpCZV74mlA/5tT2NOo6jq6FZdHeSXPwiLxwyr5mqlc8/uLDtd3FyHAt0lsfWiLxciDhZo5wR9ucZzXBOv+/V3Tdt9ncflfQIV4wdXtaFsnkvMe3bh//FcnA3xhi+0ZCbLBWXbL5rDg2ztrvAgMBAAEwCQYFKw4DAh0FAAOBgQAyRxk18LIQvRAjNnQzKdo6lvclKdaiSchU6ug+35fM6IZEKQnxMY+cC7kFtMz0UQOIsXKGD4GxKq2VG/nONii5eojvezqyzWOLGXd/2IWjHdFlNCRE+QYtW80JRTxll5VLFkVz5z1XHtTYumuEp2suc3kpKD5zhJX1Ql5+Z0CJow==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
