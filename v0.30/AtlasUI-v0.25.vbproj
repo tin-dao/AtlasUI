@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B28FC09F-87DF-4FB3-A682-53516B4305F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AtlasUI_v0._30.My.MyApplication</StartupObject>
+    <RootNamespace>AtlasUI_v0._30</RootNamespace>
+    <AssemblyName>AtlasUI</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ProductName>AtlasUI</ProductName>
+    <PublisherName>AOSDT</PublisherName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.3.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AtlasUI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AtlasUI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>749BC7259B0A6CFBD22352F463B8411B195D6136</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>AtlasUI-v0.25_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppearanceManager.Designer.vb">
+      <DependentUpon>AppearanceManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AppearanceManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="FlexiWindow.Designer.vb">
+      <DependentUpon>FlexiWindow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FlexiWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sapphire.Designer.vb">
+      <DependentUpon>Sapphire.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sapphire.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contributors.Designer.vb">
+      <DependentUpon>Contributors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contributors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JavaScript.designer.vb">
+      <DependentUpon>JavaScript.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JavaScript.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinuxCompatibility.designer.vb">
+      <DependentUpon>LinuxCompatibility.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LinuxCompatibility.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logout.designer.vb">
+      <DependentUpon>Logout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PHP.designer.vb">
+      <DependentUpon>PHP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PHP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preferences.Designer.vb">
+      <DependentUpon>Preferences.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aTyper.designer.vb">
+      <DependentUpon>aTyper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="aTyper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuickPad.designer.vb">
+      <DependentUpon>QuickPad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuickPad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup.Designer.vb">
+      <DependentUpon>Setup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splashup.Designer.vb">
+      <DependentUpon>Splashup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Splashup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysInfo.designer.vb">
+      <DependentUpon>SysInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SysInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI.Designer.vb">
+      <DependentUpon>UI.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WebBrowserSourceCode.Designer.vb">
+      <DependentUpon>WebBrowserSourceCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WebBrowserSourceCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.vb">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppearanceManager.resx">
+      <DependentUpon>AppearanceManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexiWindow.resx">
+      <DependentUpon>FlexiWindow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sapphire.resx">
+      <DependentUpon>Sapphire.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contributors.resx">
+      <DependentUpon>Contributors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JavaScript.resx">
+      <DependentUpon>JavaScript.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinuxCompatibility.resx">
+      <DependentUpon>LinuxCompatibility.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logout.resx">
+      <DependentUpon>Logout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PHP.resx">
+      <DependentUpon>PHP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preferences.resx">
+      <DependentUpon>Preferences.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aTyper.resx">
+      <DependentUpon>aTyper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickPad.resx">
+      <DependentUpon>QuickPad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup.resx">
+      <DependentUpon>Setup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splashup.resx">
+      <DependentUpon>Splashup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysInfo.resx">
+      <DependentUpon>SysInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI.resx">
+      <DependentUpon>UI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebBrowserSourceCode.resx">
+      <DependentUpon>WebBrowserSourceCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="rez\bar.png" />
+    <None Include="Images\border.png" />
+    <Content Include="Images\grass.jpg" />
+    <Content Include="Images\home.png" />
+    <Content Include="icon.ico" />
+    <None Include="Images\Wallpapers\majesticlake.jpg" />
+    <None Include="Images\Wallpapers\sunset.jpg" />
+    <None Include="Images\Wallpapers\tundra.jpg" />
+    <None Include="Images\Wallpapers\tundra2.jpg" />
+    <None Include="Images\Wallpapers\grass.jpg" />
+    <None Include="Images\nullbg.png" />
+    <Content Include="Resources\cloudymountains.jpg" />
+    <Content Include="Resources\erodedrocks.jpg" />
+    <Content Include="Resources\rainfall.jpg" />
+    <Content Include="Resources\sunflower.jpg" />
+    <None Include="Resources\capsule.jpeg.jpg" />
+    <None Include="Resources\AtlasUI-Ripples.png" />
+    <None Include="Images\aosdt.png" />
+    <Content Include="Images\AtlasUISetupManager.png" />
+    <Content Include="Images\battery-25tolow.png" />
+    <Content Include="Images\battery-50.png" />
+    <Content Include="Images\battery-75.png" />
+    <Content Include="Images\battery-charged.png" />
+    <Content Include="Images\battery-charging.png" />
+    <Content Include="Images\exit.png" />
+    <None Include="Images\fake-url-box.png" />
+    <Content Include="Images\icon.png" />
+    <Content Include="Images\input.png" />
+    <None Include="Images\meebo.png" />
+    <None Include="Images\Menu\accessories.png" />
+    <None Include="Images\Menu\games.png" />
+    <None Include="Images\Menu\graphics.png" />
+    <None Include="Images\Menu\internet.png" />
+    <None Include="Images\Menu\office.png" />
+    <None Include="Images\Menu\multimedia.png" />
+    <None Include="Images\Menu\system.png" />
+    <None Include="Images\Menu\development.png" />
+    <Content Include="Images\minimize.png" />
+    <Content Include="Images\network-offline.png" />
+    <Content Include="Images\plasmadesktop.png" />
+    <None Include="Images\PowerManagement\lock.png" />
+    <None Include="Images\PowerManagement\logout.png" />
+    <None Include="Images\PowerManagement\restart.png" />
+    <None Include="Images\PowerManagement\shutdown.png" />
+    <None Include="Images\PowerManagement\switch.png" />
+    <None Include="Images\sapphire-transparent.png" />
+    <Content Include="Images\Sapphire\add-tab.png" />
+    <Content Include="Images\Sapphire\back.png" />
+    <Content Include="Images\Sapphire\forward.png" />
+    <Content Include="Images\Sapphire\home.png" />
+    <Content Include="Images\Sapphire\icon.ico" />
+    <Content Include="Images\Sapphire\LargeSapphireLogo.png" />
+    <Content Include="Images\Sapphire\refresh.png" />
+    <Content Include="Images\Sapphire\search.png" />
+    <Content Include="Images\Sapphire\stop.png" />
+    <Content Include="Images\Sapphire\tool.png" />
+    <None Include="Images\WordSZ.png" />
+    <Content Include="OtherSoftware\Minesweeper.exe" />
+    <None Include="Images\network-online.png" />
+    <Content Include="Images\poweroff.png" />
+    <Content Include="Images\SplashScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MSHTML">
+      <Guid>{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
