@@ -1,0 +1,144 @@
+/* This is the official AtlasUI Web Framework stylesheet
+ * The stylesheet will be divided up into different framework / module types */
+
+/* This is the beginning of the audio and video framework styling */
+
+/* This is the end of the audio and video framework styling */
+
+/* This is the beginning of the AtlasUI Main Module styling */
+
+	/* Modules */
+
+		.elegant_module{
+			
+			border: 1px solid #333333;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			background-color: white;
+			
+		}
+		
+		.elegant_module label{
+			
+			width: 98%;
+			height: 24px;
+			margin: 1%;
+			background-color: #666666;
+			color: #0099ff;
+			font-size: 18px;
+			line-height: 24px;
+			text-indent: 5px;
+			border-radius: 5px 5px 0px 0px;
+			-moz-border-radius: 5px 5px 0px 0px;
+			float: left;
+		}
+		
+		.minimalistic_module{
+			
+			border: 1px solid #CCCCCC;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			background-color: white;
+			
+		}
+		
+		.minimalistic_module label{
+			
+			width: 98%;
+			height: 24px;
+			margin: 1%;
+			background-color: white;
+			color: #666666;
+			font-size: 18px;
+			line-height: 24px;
+			float: left;
+			
+		}
+	
+	/* End Modules */
+	
+	/* Search */
+	
+		.search_module{
+			width: 250px;
+			height: 32px;
+			float: left;
+			position: inherit;
+			border: 1px solid #CCCCCC;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+		}
+		
+		.search_module input{
+			float: left;
+			min-width: 120px;
+			width: auto;
+			max-width: 165px;
+			height: 30px;
+			font-size: 16px;
+			border: 0px;
+		}
+		
+		.search_module button{
+			min-width: 75px;
+			width: auto;
+			max-width: 120px;
+			height: 32px;
+			float: right;
+			border-left: 1px solid #CCCCCC;
+			border-top: 0px;
+			border-right: 0px;
+			border-bottom: 0px;
+			background-color: white;
+			text-align: center;
+			line-height: 30px;
+			color: #666666;
+			font-size: 16px;
+		}
+	/* End Search */
+	
+	/* Topbar */
+	
+		.elegant_topbar{
+			
+			width: 100%;
+			float: left;
+			min-height: 32px;
+			height: 50px;
+			top: 0;
+			left: 0;
+			margin-bottom: 10px;
+			z-index: 2;
+			position: inherit;
+			border-bottom: 1px solid #0099ff;
+			background-color: #666666;
+			color: white;
+			
+		}
+		
+		.minimalistic_topbar{
+			
+			width: 100%;
+			float: left;
+			min-height: 32px;
+			height: 50px;
+			top: 0;
+			left: 0;
+			margin-bottom: 10px;
+			z-index: 2;
+			position: absolute;
+			border-bottom: 1px solid #CCCCCC;
+			color: #666666;
+			background-color: #ffffff;
+		}
+	/* End Topbar */
+	
+/* This is the end of the AtlasUI Main Module styling */
+
+/* This is the beginning of the AtlasUI Browser Interaction styling */
+
+/* This is the end of the AtlasUI Browser Interaction styling */
+
+/* This is the beginning of the Social Network Framework styling */
+
+/* This is the end of the Social Network Framework styling */
