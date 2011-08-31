@@ -32,6 +32,7 @@
 
     include("social/facebook.php");
     include("social/evovid.php");
+	include("social/reddit.php");
     include("social/twitter.php");
     include("social/youtube.php");
 
