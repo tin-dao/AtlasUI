@@ -16,13 +16,20 @@
 		else{
 			print "\"></a>You will need to choose set or dynamic on your Framework reddit function.";
 		}
-		print "\" target=\"_blank\">";
-		if ($image !== "default")
+		if ($set_or_dynamic == "set" || "dynamic")
 		{
-			print "<img src=\"" . $url . "\" alt=\"Submit To Reddit!\" border=\"0\" />";
+			print "\" target=\"_blank\">";
+			if ($image !== "default")
+			{
+				print "<img src=\"" . $url . "\" alt=\"Submit To Reddit!\" border=\"0\" />";
+			}
+			else{
+				print "<img src=\"http://www.reddit.com/static/spreddit7.gif\" alt=\"Submit To Reddit!\" border=\"0\" />";
+			}
+			print "</a>";
 		}
 		else{
-			print "<img src=\"http://www.reddit.com/static/spreddit7.gif\" alt=\"Submit To Reddit!\" border=\"0\" />";
+		
 		}
 	}
 
