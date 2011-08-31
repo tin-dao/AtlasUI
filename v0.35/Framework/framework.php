@@ -40,6 +40,7 @@
 
 			include("social/facebook.php");
 			include("social/google_plus_one.php");
+			include("social/google_buzz.php");
 			include("social/evovid.php");
 			include("social/reddit.php");
 			include("social/twitter.php");
