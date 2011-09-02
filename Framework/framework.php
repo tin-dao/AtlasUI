@@ -24,6 +24,7 @@
 
 		  /* Import AtlasUI Main Modules */
 
+			/* To be included on a further date - include("plugins/aosdt_auth.php"); */
 			include("main/module.php");
 			include("main/search.php");
 			include("main/topbar.php");
@@ -39,6 +40,7 @@
 		  /* Import Social Network Framework */
 
 			include("social/facebook.php");
+			include("social/flattr_button.php");
 			include("social/google_plus_one.php");
 			include("social/google_buzz.php");
 			include("social/evovid.php");
