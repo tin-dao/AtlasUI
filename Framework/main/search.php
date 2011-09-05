@@ -1,17 +1,32 @@
 <?php
 
-	function search($form_or_cse, $filepath_or_uniqueid, $input_box_message, $search_button_message, $class){
+	function search($type_of_form, $filepath_or_uniqueid, $input_box_message, $search_button_message, $class){
+		
+		$nodes_query = $_POST["nodesquery"];
+		$search_input = $_POST["search_input"];
 
-		if ($form_or_cse == "form")
+		if ($form_or_cse == ("form" || "nodes"))
 		{
-			print "<form action=\"$filepath_or_uniqueid\" method=\"POST\"";
+			if ($form_or_cse == "nodes")
+			{
+				print "<form action=\"\" method=\"POST\" target=\"_blank\"";
+			}
+			else{
+				print "<form action=\"$filepath_or_uniqueid\" method=\"POST\"";
+			}
 			if ($class == ""){
 				print "class=\"search_module\">";
 			}
 			else{
 				print "class=\"$class\">";
 			}
-
+				if ($form_or_cse == "nodes")
+				{
+					print "<input type=\"hidden\" name=\"nodesquery\" value=\"catchme\" />";
+				}
+				else{
+					;
+				}
 				print "<input type=\"text\" name=\"search_input\" ";
 				if ($input_box_message == ""){
 					print "placeholder=\"Search...\" />";
@@ -46,6 +61,14 @@
 			print "<div id=\"cse-search-form\" style=\"width: 100%;\">Loading</div>";
 		}
 
+		if ($nodes_query == "catchme")
+		{
+			$url = "http://nodes.net/index.html?" . $search_input;
+			header("Location: $url");
+		}
+		else{
+
+		}
 	}
 
 ?>
