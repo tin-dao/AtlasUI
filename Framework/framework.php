@@ -36,6 +36,8 @@
 			include("browser/redirect.php");
 
 		  /* Import Modular Communication Framework */
+		  
+			include("plugins/atlasui_sql_connect.php");
 
 		  /* Import Social Network Framework */
 
