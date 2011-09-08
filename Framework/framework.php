@@ -5,17 +5,11 @@
 			<link rel="stylesheet" type="text/css" href="/Framework/custom.css" />
 			<link rel="stylesheet" type="text/css" href="../Framework/all.css" />
 			<link rel="stylesheet" type="text/css" href="../Framework/custom.css" />
+			<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	</head>
 	<body>
 	
 		<?php
-
-		  /* Import Framework Stylesheets */
-
-			print "<link rel=\"stylesheet\" type=\"text/css\" href=\"/Framework/all.css\" />";
-			print "<link rel=\"stylesheet\" type=\"text/css\" href=\"/Framework/custom.css\" />";
-			print "<link rel=\"stylesheet\" type=\"text/css\" href=\"../Framework/all.css\" />";
-			print "<link rel=\"stylesheet\" type=\"text/css\" href=\"../Framework/custom.css\" />";
 
 		  /* Import Audio and Video Framework */
 
