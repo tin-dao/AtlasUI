@@ -35,9 +35,10 @@
 
 			include("browser/redirect.php");
 
-		  /* Import Modular Communication Framework */
+		  /* Import Modular Communication Framework & Other Plugins */
 		  
 			include("plugins/atlasui_sql_connect.php");
+			include("plugins/google_maps_static.php");
 
 		  /* Import Social Network Framework */
 
