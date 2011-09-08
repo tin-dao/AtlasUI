@@ -3,11 +3,12 @@
 	function search($type_of_form, $filepath_or_uniqueid, $input_box_message, $search_button_message, $class){
 		
 		$nodes_query = $_POST["nodesquery"];
+		$nodes_type = $_POST["nodestype"];
 		$search_input = $_POST["search_input"];
 
-		if ($form_or_cse == ("form" || "nodes"))
+		if ($type_of_form == ("form" || ("Nodes|Metasearch" || "Nodes|Metalink")))
 		{
-			if ($form_or_cse == "nodes")
+			if ($type_of_form == ("Nodes|Metasearch" || "Nodes|Metalink"))
 			{
 				print "<form action=\"\" method=\"POST\" target=\"_blank\"";
 			}
@@ -20,12 +21,19 @@
 			else{
 				print "class=\"$class\">";
 			}
-				if ($form_or_cse == "nodes")
+				if ($type_of_form == ("Nodes|Metasearch" || "Nodes|Metalink"))
 				{
 					print "<input type=\"hidden\" name=\"nodesquery\" value=\"catchme\" />";
+					if ($type_of_form == "Nodes|Metasearch")
+					{
+						print "<input type=\"hidden\" name=\"nodestype\" value=\"metasearch\" />";
+					}
+					else{
+						print "<input type=\"hidden\" name=\"nodestype\" value=\"metalink\" />";
+					}
 				}
 				else{
-					;
+					
 				}
 				print "<input type=\"text\" name=\"search_input\" ";
 				if ($input_box_message == ""){
@@ -44,7 +52,7 @@
 					}
 				print "</button>";
 		}
-		elseif ($form_or_cse == "cse")
+		elseif ($type_of_form == "cse")
 		{
 			print "<script src=\"http://www.google.com/jsapi\" type=\"text/javascript\"></script>";
 			print "<script type=\"text/javascript\">";
@@ -63,7 +71,14 @@
 
 		if ($nodes_query == "catchme")
 		{
-			$url = "http://nodes.net/index.html?" . $search_input;
+			if ($nodes_type == "metasearch")
+			{
+				$url = "http://nodes.net/index.html?" . $search_input;
+			}
+			elseif ($nodes_type == "metalink")
+			{
+				$url = "http://" . $search_input . ".nodes.net";
+			}
 			header("Location: $url");
 		}
 		else{
