@@ -1,5 +1,9 @@
 <?php
 
+	/* DEPENDENCIES:
+	 * browser/redirect.php
+	 */
+	  
 	function search($type_of_form, $filepath_or_uniqueid, $input_box_message, $search_button_message, $class){
 		
 		$nodes_query = $_POST["nodesquery"];
@@ -79,7 +83,7 @@
 			{
 				$url = "http://" . $search_input . ".nodes.net";
 			}
-			header("Location: $url");
+			redirect($url,"0.5");
 		}
 		else{
 

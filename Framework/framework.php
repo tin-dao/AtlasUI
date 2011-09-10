@@ -8,6 +8,9 @@
 			<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	</head>
 	<body>
+		<-- AtlasUI Web Framework is 100% free as in freedom and 100% free as in cost, licensed under the FreeSoft Licensing.
+			To view the licensing, go to http://globalcommunityportal.com/unity/freesoft. To download and distribute your own
+			copy of AtlasUI Web Framework, go to http://github.com/JoshStrobl/AtlasUI for more information -->
 	
 		<?php
 
