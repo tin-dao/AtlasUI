@@ -28,8 +28,7 @@
 
 		  /* Import AtlasUI Browser Interaction Modules */
 			
-			/* To be included on a further date - include("browser/notification.php"); */
-
+			include("browser/notification.php");
 			include("browser/redirect.php");
 
 		  /* Import Modular Communication Framework & Other Plugins */
