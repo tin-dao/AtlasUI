@@ -8,7 +8,7 @@
 			<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	</head>
 	<body>
-		<-- AtlasUI Web Framework is 100% free as in freedom and 100% free as in cost, licensed under the FreeSoft Licensing.
+		<!-- AtlasUI Web Framework is 100% free as in freedom and 100% free as in cost, licensed under the FreeSoft Licensing.
 			To view the licensing, go to http://globalcommunityportal.com/unity/freesoft. To download and distribute your own
 			copy of AtlasUI Web Framework, go to http://github.com/JoshStrobl/AtlasUI for more information -->
 	
@@ -35,6 +35,7 @@
 		  /* Import Modular Communication Framework & Other Plugins */
 		  
 			include("plugins/atlasui_sql_connect.php");
+			include("plugins/opengraph.php");
 			include("plugins/google_maps_static.php");
 
 		  /* Import Social Network Framework */
