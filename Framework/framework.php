@@ -45,6 +45,7 @@
 			include("social/google_buzz.php");
 			include("social/evovid.php");
 			include("social/reddit.php");
+			include("social/spotify.php");
 			include("social/twitter.php");
 			include("social/youtube.php");
 
