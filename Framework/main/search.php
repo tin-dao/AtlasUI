@@ -83,7 +83,7 @@
 			{
 				$url = "http://" . $search_input . ".nodes.net";
 			}
-			redirect($url,"0.5");
+			atlas_redirect($url,"0.5");
 		}
 		else{
 

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:og="http://ogp.me/ns#">
 	<head>
-			<link rel="stylesheet" type="text/css" href="/Framework/all.css" />
-			<link rel="stylesheet" type="text/css" href="/Framework/custom.css" />
+			<link rel="stylesheet" type="text/css" href="../all.css" />
+			<link rel="stylesheet" type="text/css" href="../custom.css" />
 			<link rel="stylesheet" type="text/css" href="../Framework/all.css" />
 			<link rel="stylesheet" type="text/css" href="../Framework/custom.css" />
 			<meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -16,6 +16,7 @@
 
 		  /* Import Audio and Video Framework */
 
+			include("media/atlasui_cc_buttons.php");
 			include("media/audio.php");
 			include("media/video.php");
 

@@ -3,6 +3,15 @@
 
 /* This is the beginning of the audio and video framework styling */
 
+	.cc_button{
+		font-size: 12px;
+	}
+	
+	.cc_button a{
+		color: #0099ff;
+		text-decoration: none;
+	}
+	
 /* This is the end of the audio and video framework styling */
 
 /* This is the beginning of the AtlasUI Main Module styling */

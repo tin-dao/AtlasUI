@@ -1,6 +1,6 @@
 <?php
 
-	function redirect($url, $seconds){
+	function atlas_redirect($url, $seconds){
 
 		if ($seconds < "0.5")
 		{
