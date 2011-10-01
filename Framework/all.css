@@ -150,8 +150,8 @@
 
 .atlasui_notification
 {
-	width:300px;
-	height:150px;
+	width: 300px;
+	height: 150px;
 	background: white;
 	border: 2px solid #CCCCCC;
 	border-radius: 5px;
@@ -161,6 +161,8 @@
 	-moz-animation: notify 10s; /* Firefox */
 	-webkit-animation: notify 10s; /* Safari and Chrome */
 	opacity: 0;
+	float: right;
+	margin-bottom: -70%;
 }
 
 #atlasui_notification_title{
