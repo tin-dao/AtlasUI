@@ -1,13 +1,18 @@
-This is v0.36 Alpha 2 / Peppermint Release of AtlasUI Web Framework. This framework version includes:
+This is v0.37 Alpha 3 / Peppermint Release of AtlasUI Web Framework. This framework version includes:
 
 -------Main Implementations-------
+- AtlasUI FTP Login
 - AtlasUI SQL Connect
+- AtlasUI String Encrypt
 - Audio
+- Browser Notifications
 - Main Modules
 - Redirects
 - Search Forms
 - Topbar
 - Video
+
+And more...
 
 -------Social Implementations-------
 
@@ -16,7 +21,9 @@ This is v0.36 Alpha 2 / Peppermint Release of AtlasUI Web Framework. This framew
 - Flattr Badges
 - Google +1 Button
 - Google Buzz Button
+- OpenGraph Metadata
 - Reddit Button
+- Spotify Follow Button
 - Twitter Follow & Tweet
 - Youtube Advanced Video Embedding
 

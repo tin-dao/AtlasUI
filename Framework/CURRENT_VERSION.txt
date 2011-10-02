@@ -1,5 +1,7 @@
 Current Release:
-September 9/10th, 2011 - 0.36.0 Alpha 2 Release / Peppermint Build 
+October 1st, 2011 - 0.37.0 Alpha 3 Release / Peppermint Build
 
 Prior Releases:
+September 16th, 2011 - 0.36.1 Alpha 2 Release / Peppermint Build (Fix Build)
+September 9/10th, 2011 - 0.36.0 Alpha 2 Release / Peppermint Build 
 August 28th, 2011 - 0.35.0 Alpha Release / Peppermint Build

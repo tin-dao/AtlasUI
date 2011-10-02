@@ -32,6 +32,11 @@
 				print "<meta property=\"og:postal-code\" content=\"$postal_code\" />";
 				print "<meta property=\"og:country-name\" content=\"$country_name\" />";			
 			}
+			if ($url !== "")
+			{
+				print "<meta property=\"og:url\" content=\"$url\" />";
+			}
+			
 			if ($image !== "")
 			{
 				print "<meta property=\"og:image\" content=\"$image\" />";
