@@ -32,8 +32,14 @@
 				print "<meta property=\"og:postal-code\" content=\"$postal_code\" />";
 				print "<meta property=\"og:country-name\" content=\"$country_name\" />";			
 			}
-			if ($url !== "")
+			if ($url !== "dynamic")
 			{
+				print "<meta property=\"og:url\" content=\"$url\" />";
+			}
+			else{
+				$initurl = $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+				$stripcolons = str_replace(":", "%3A", $url);
+				$url = str_replace("/","%2F", $stripcolons);
 				print "<meta property=\"og:url\" content=\"$url\" />";
 			}
 			
