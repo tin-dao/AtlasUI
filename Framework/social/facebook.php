@@ -11,9 +11,7 @@
 		}
 		elseif ($set_or_dynamic_url == "dynamic")
 		{
-			$url = $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
-			$stripcolons = str_replace(":", "%3A", $url);
-			$fburl = str_replace("/","%2F", $stripcolons);
+			$fburl = atlasui_url_address("yes");
 			print "href=$fburl";
 		}
 		if ($width == "")

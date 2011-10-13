@@ -20,9 +20,7 @@
 			print "url=$tweeturl";
 		}
 		else{
-			$url = $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
-			$stripcolons = str_replace(":", "%3A", $url);
-			$tweeturl = str_replace("/","%2F", $stripcolons);
+			$tweeturl = atlasui_url_address("yes");
 			print "url=$tweeturl";
 		}
 		if ($tweet_text == "")

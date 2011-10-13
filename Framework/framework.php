@@ -9,16 +9,19 @@
 	</head>
 	<body>
 		<!-- AtlasUI Web Framework is 100% free as in freedom and 100% free as in cost, licensed under the FreeSoft Licensing.
-			To view the licensing, go to http://globalcommunityportal.com/unity/freesoft. To download and distribute your own
+			To view the licensing, go to http://freesoft.aosdt.com. To download and distribute your own
 			copy of AtlasUI Web Framework, go to http://github.com/JoshStrobl/AtlasUI for more information -->
 	
 		<?php
-
 		  /* Import Audio and Video Framework */
 
 			include("media/atlasui_cc_buttons.php");
 			include("media/audio.php");
 			include("media/video.php");
+			
+		  /* Import AtlasUI Drawing and Graphics Framework */
+			
+			include("drawing/draw_heart.php");
 
 		  /* Import AtlasUI Main Modules */
 
@@ -33,10 +36,11 @@
 			include("browser/redirect.php");
 
 		  /* Import Modular Communication Framework & Other Plugins */
-		  
+
+			include("plugins/atlasui_encrypt.php");
 			include("plugins/atlasui_ftp_login.php");
 			include("plugins/atlasui_sql_connect.php");
-			include("plugins/atlasui_encrypt.php");
+			include("plugins/atlasui_url_address.php");
 			include("plugins/opengraph.php");
 			include("plugins/google_maps_static.php");
 

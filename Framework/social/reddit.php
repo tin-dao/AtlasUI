@@ -8,9 +8,7 @@
 		}
 		elseif ($set_or_dynamic == "dynamic")
 		{
-			$initurl = $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
-			$stripcolons = str_replace(":", "%3A", $url);
-			$url = str_replace("/","%2F", $stripcolons);
+			$url = atlasui_url_address("yes");
 			print $url;
 		}
 		else{
