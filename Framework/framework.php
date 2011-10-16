@@ -44,6 +44,7 @@
 			include("plugins/opengraph.php");
 			include("plugins/google_maps_static.php");
 			include("plugins/paypal.php");
+			include("plugins/powered_by.php"); // Powered by AtlasUI Web Framework banner - integration is completely optional of course //
 
 		  /* Import Social Network Framework */
 
