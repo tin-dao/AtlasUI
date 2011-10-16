@@ -25,7 +25,7 @@
 
 		  /* Import AtlasUI Main Modules */
 
-			/* To be included on a further date - include("plugins/aosdt_auth.php"); */
+			include("main/menubar.php");
 			include("main/module.php");
 			include("main/search.php");
 			include("main/topbar.php");
@@ -43,6 +43,7 @@
 			include("plugins/atlasui_url_address.php");
 			include("plugins/opengraph.php");
 			include("plugins/google_maps_static.php");
+			include("plugins/paypal.php");
 
 		  /* Import Social Network Framework */
 

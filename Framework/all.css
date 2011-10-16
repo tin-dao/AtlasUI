@@ -1,5 +1,7 @@
 /* This is the official AtlasUI Web Framework stylesheet
  * The stylesheet will be divided up into different framework / module types */
+ 
+ @import url(http://fonts.googleapis.com/css?family=PT+Sans);
 
 /* This is the beginning of the audio and video framework styling */
 
@@ -16,7 +18,34 @@
 
 /* This is the beginning of the AtlasUI Main Module styling */
 
+	/* Menubar */
+	
+		.dark_menubar{
+			width: 95%;
+			float: left;
+			margin-left: 2.5%;
+			margin-right: 2.5%;
+			height: 40px;
+			overflow: hidden;
+			background-image: url("images/menubar_bg.png");
+			background-repeat: repeat-x;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+		}
+		
+		.dark_menubar a{
+			width: auto;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 20px;
+			color: white;
+			line-height: 40px;
+			height: 40px;
+			margin-left: 2.5%;
+			text-decoration: none;
+		}
+		
 	/* Modules */
+	
 
 		.elegant_module{
 			
