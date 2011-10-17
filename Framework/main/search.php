@@ -83,7 +83,7 @@
 			{
 				$url = "http://" . $search_input . ".nodes.net";
 			}
-			atlas_redirect($url,"0.5");
+			print "<meta http-equiv=\"refresh\" content=\"0.5;url=" . $url . "\" />";
 		}
 		else{
 

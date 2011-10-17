@@ -25,6 +25,7 @@
 
 		  /* Import AtlasUI Main Modules */
 
+			include("main/contactform.php");
 			include("main/menubar.php");
 			include("main/module.php");
 			include("main/search.php");

@@ -18,6 +18,64 @@
 
 /* This is the beginning of the AtlasUI Main Module styling */
 
+	/* Contact Form */
+	
+		.atlasui_contact_form{
+			
+		}
+		
+		.atlasui_contact_form button{
+			margin-top: 10px;
+			font-size: 18px;
+			text-align: center;
+			width: 100px;
+			border: 1px solid #CCCCCC;
+			background-color: #FAFAFA;
+			border-radius: 10px;
+			height: 32px;
+			line-height: 28px;
+			color: #0099ff;
+			float: right;
+			font-family: "PT Sans", sans-serif;
+		}
+		
+		.atlasui_contact_form input{
+			width: 100%;
+			height: 32px;
+			float: left;
+			font-size: 18px;
+			line-height: 32px;
+			margin-top: 5px;
+			background-color: #FAFAFA;
+			border: 1px solid #CCCCCC;
+			border-radius: 10px;
+			-moz-border-radius: 10px;
+			color: #333333;
+			text-indent: 5px;
+			float: left;
+			font-family: "PT Sans", sans-serif;
+		}
+		
+		.atlasui_contact_form textarea{
+			min-width: 100%;
+			min-height: 100px;
+			max-height: 100px;
+			max-width: 100%;
+			resize: none;
+			float: left;
+			border: 1px solid #CCCCCC;
+			background-color: #FAFAFA;
+			border-radius: 10px;
+			-moz-border-radius: 10px;
+			font-size: 18px;
+			line-height: 28px;
+			text-indent: 5px;
+			color: #333333;
+			overflow-y: auto;
+			font-family: "PT Sans", sans-serif;
+			margin-top: 10px;
+		}
+		
 	/* Menubar */
 	
 		.dark_menubar{
@@ -49,26 +107,28 @@
 
 		.elegant_module{
 			
-			border: 1px solid #333333;
-			border-radius: 5px;
-			-moz-border-radius: 5px;
+			border: 1.75px solid #0099ff;
+			border-radius: 7.5px;
+			-moz-border-radius: 7.5px;
 			background-color: white;
 			
 		}
 		
 		.elegant_module label{
 			
-			width: 98%;
-			height: 24px;
-			margin: 1%;
-			background-color: #666666;
-			color: #0099ff;
-			font-size: 18px;
-			line-height: 24px;
+			width: 99%;
+			height: 32px;
+			margin: 0.5%;
+			background-image: url("images/elegant_module_top.png");
+			background-repeat: repeat-x;
+			color: #333333;
+			font-size: 20px;
+			line-height: 32px;
 			text-indent: 5px;
 			border-radius: 5px 5px 0px 0px;
 			-moz-border-radius: 5px 5px 0px 0px;
 			float: left;
+			font-family: 'PT Sans', sans-serif;
 		}
 		
 		.minimalistic_module{
@@ -145,15 +205,19 @@
 			float: left;
 			min-height: 32px;
 			height: 50px;
-			top: 0;
-			left: 0;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			margin-top: 0px;
+			margin-left: 0px;
+			margin-right: 0px;
 			margin-bottom: 10px;
-			z-index: 2;
-			position: inherit;
+			padding: 0px;
+			z-index: 100;
+			position: fixed;
 			border-bottom: 1px solid #0099ff;
 			background-color: #666666;
 			color: white;
-			
 		}
 		
 		.minimalistic_topbar{
@@ -162,12 +226,17 @@
 			float: left;
 			min-height: 32px;
 			height: 50px;
-			top: 0;
-			left: 0;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			margin-top: 0px;
+			margin-left: 0px;
+			margin-right: 0px;
 			margin-bottom: 10px;
-			z-index: 2;
-			position: absolute;
-			border-bottom: 1px solid #CCCCCC;
+			padding: 0px;
+			z-index: 100;
+			position: fixed;
+			border-bottom: 2px solid #CCCCCC;
 			color: #666666;
 			background-color: #ffffff;
 		}
