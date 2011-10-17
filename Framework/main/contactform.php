@@ -2,7 +2,7 @@
 
 	function contactForm($recipient_email, $name_input, $email_input, $subject_input, $button_name)
 	{
-		$domain = $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"];
+		$domain = $_SERVER["SERVER_NAME"];
 		$rand_domain_email = "contactform@" . $domain;
 		print "<form action=\"#\" method=\"POST\" class=\"atlasui_contact_form\">";
 			print "<input type=\"hidden\" name=\"recipient\" value=\"$recipient_email\" />";
