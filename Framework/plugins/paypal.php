@@ -2,16 +2,37 @@
 
 	function paypal_button($paypal_email, $item_name, $item_cost, $currency_code, $no_note, $no_shipping, $tax_rate, $shipping_cost)
 	{
+		$currency_array = array("EUR","AUD","BRL","GBP","CAD","CZK","DKK","HKD","HUF","ILS","JPY","MXN","TWD","NZD","NOK","PHP","PLN","SGD","SEK","CHF","THB","USD");
 		print "<form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">";
 		print "<input type=\"hidden\" name=\"cmd\" value=\"_xclick\">";
 		print "<input type=\"hidden\" name=\"business\" value=\"$paypal_email\">";
 		print "<input type=\"hidden\" name=\"lc\" value=\"US\">";
 		print "<input type=\"hidden\" name=\"item_name\" value=\"$item_name\">";
 		print "<input type=\"hidden\" name=\"amount\" value=\"$item_cost\">";
-		print "<input type=\"hidden\" name=\"currency_code\" value=\"$currency_code\">";
+		
+		if (strstr($currency_code, $currency_array))
+		{
+			print "<input type=\"hidden\" name=\"currency_code\" value=\"$currency_code\">";
+		}
+		else{
+			print "<input type=\"hidden\" name=\"currency_code\" value=\"USD\">";
+		}
+		
 		print "<input type=\"hidden\" name=\"button_subtype\" value=\"services\">";
 		print "<input type=\"hidden\" name=\"no_note\" value=\"$no_note\">";
-		print "<input type=\"hidden\" name=\"no_shipping\" value=\"$no_shipping\">";
+		
+		if ($no_shipping == ("" || "false" || "not required"))
+		{
+			print "<input type=\"hidden\" name=\"no_shipping\" value=\"1\">";
+		}
+		elseif ($no_shipping == ("yes" || "true" || "required"))
+		{
+			print "<input type=\"hidden\" name=\"no_shipping\" value=\"2\">";
+		}
+		else{
+			print "<input type=\"hidden\" name=\"no_shipping\" value=\"1\">";
+		}
+		
 		print "<input type=\"hidden\" name=\"rm\" value=\"1\">";
 		
 		if ($tax_rate < "0.00")
