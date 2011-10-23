@@ -10,9 +10,9 @@
 		$nodes_type = $_POST["nodestype"];
 		$search_input = $_POST["search_input"];
 
-		if ($type_of_form == ("form" || ("Nodes|Metasearch" || "Nodes|Metalink")))
+		if ($type_of_form !== "cse")
 		{
-			if ($type_of_form == ("Nodes|Metasearch" || "Nodes|Metalink"))
+			if ($type_of_form !== "form")
 			{
 				print "<form action=\"\" method=\"POST\" target=\"_blank\"";
 			}
@@ -25,7 +25,7 @@
 			else{
 				print "class=\"$class\">";
 			}
-				if ($type_of_form == ("Nodes|Metasearch" || "Nodes|Metalink"))
+				if ($type_of_form == "Nodes|Metasearch" || "Nodes|Metalink")
 				{
 					print "<input type=\"hidden\" name=\"nodesquery\" value=\"catchme\" />";
 					if ($type_of_form == "Nodes|Metasearch")
