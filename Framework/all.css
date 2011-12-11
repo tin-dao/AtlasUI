@@ -158,7 +158,7 @@
 	/* Search */
 	
 		.search_module{
-			width: 250px;
+			min-width: 250px;
 			height: 32px;
 			float: left;
 			position: inherit;
@@ -170,9 +170,7 @@
 		
 		.search_module input{
 			float: left;
-			min-width: 120px;
 			width: auto;
-			max-width: 165px;
 			height: 30px;
 			font-size: 16px;
 			border: 0px;

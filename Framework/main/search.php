@@ -4,7 +4,7 @@
 	 * browser/redirect.php
 	 */
 	  
-	function search($type_of_form, $filepath_or_uniqueid, $input_box_message, $search_button_message, $class){
+	function search($type_of_form, $filepath_or_uniqueid, $input_box_message, $enable_speech, $search_button_message, $class){
 		
 		$nodes_query = $_POST["nodesquery"];
 		$nodes_type = $_POST["nodestype"];
@@ -25,21 +25,14 @@
 			else{
 				print "class=\"$class\">";
 			}
-				if ($type_of_form == "Nodes|Metasearch" || "Nodes|Metalink")
+				print "<input type=\"text\" name=\"search_input\" ";
+				if ($enabled_speech == "true")
 				{
-					print "<input type=\"hidden\" name=\"nodesquery\" value=\"catchme\" />";
-					if ($type_of_form == "Nodes|Metasearch")
-					{
-						print "<input type=\"hidden\" name=\"nodestype\" value=\"metasearch\" />";
-					}
-					else{
-						print "<input type=\"hidden\" name=\"nodestype\" value=\"metalink\" />";
-					}
+					print "x-webkit-speech ";
 				}
 				else{
 					
 				}
-				print "<input type=\"text\" name=\"search_input\" ";
 				if ($input_box_message == ""){
 					print "placeholder=\"Search...\" />";
 				}
@@ -47,14 +40,13 @@
 					print "placeholder=\"$input_box_message\" />";
 				}
 
-				print "<button type=\"submit\">";
-					if ($search_button_message == ""){
-						print "Search";
-					}
-					else{
-						print $search_button_message;
-					}
-				print "</button>";
+				if ($search_buttom_message = "")
+				{
+					
+				}
+				else{
+					print "<button type=\"submit\">$search_button_message</button>
+				}
 		}
 		elseif ($type_of_form == "cse")
 		{
@@ -71,22 +63,6 @@
 			print "</script>";
 			print "<link rel=\"stylesheet\" href=\"http://www.google.com/cse/style/look/default.css\" type=\"text/css\" />";
 			print "<div id=\"cse-search-form\" style=\"width: 100%;\">Loading</div>";
-		}
-
-		if ($nodes_query == "catchme")
-		{
-			if ($nodes_type == "metasearch")
-			{
-				$url = "http://nodes.net/index.html?" . $search_input;
-			}
-			elseif ($nodes_type == "metalink")
-			{
-				$url = "http://" . $search_input . ".nodes.net";
-			}
-			print "<meta http-equiv=\"refresh\" content=\"0.5;url=" . $url . "\" />";
-		}
-		else{
-
 		}
 	}
 
