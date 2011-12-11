@@ -45,7 +45,7 @@
 					
 				}
 				else{
-					print "<button type=\"submit\">$search_button_message</button>
+					print "<button type=\"submit\">$search_button_message</button>";
 				}
 		}
 		elseif ($type_of_form == "cse")
