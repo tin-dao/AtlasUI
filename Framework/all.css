@@ -2,6 +2,7 @@
  * The stylesheet will be divided up into different framework / module types */
  
  @import url(http://fonts.googleapis.com/css?family=PT+Sans);
+ @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
 
 /* This is the beginning of the audio and video framework styling */
 
@@ -172,9 +173,10 @@
 			float: left;
 			width: auto;
 			height: 30px;
-			font-size: 16px;
+			font-size: 15px;
 			border: 0px;
 			background-color: transparent;
+			font-family: 'Droid Sans', sans-serif;
 		}
 		
 		.search_module button{
@@ -191,7 +193,8 @@
 			text-align: center;
 			line-height: 30px;
 			color: #666666;
-			font-size: 16px;
+			font-size: 15px;
+			font-family: 'Droid Sans', sans-serif;
 		}
 	/* End Search */
 	
