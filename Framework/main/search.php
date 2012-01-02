@@ -42,7 +42,7 @@
 
 				if ($search_button_message == "")
 				{
-					print "<button type=\"submit\">Search</buttin>";
+					print "<button type=\"submit\">Search</button>";
 				}
 				else{
 					print "<button type=\"submit\">$search_button_message</button>";
