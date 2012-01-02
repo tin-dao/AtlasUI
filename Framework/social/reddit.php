@@ -19,7 +19,7 @@
 			print "\" target=\"_blank\">";
 			if ($image !== "default")
 			{
-				print "<img src=\"" . $url . "\" alt=\"Submit To Reddit!\" border=\"0\" />";
+				print "<img src=\"" . $image . "\" alt=\"Submit To Reddit!\" border=\"0\" />";
 			}
 			else{
 				print "<img src=\"http://www.reddit.com/static/spreddit7.gif\" alt=\"Submit To Reddit!\" border=\"0\" />";

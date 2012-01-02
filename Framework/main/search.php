@@ -26,7 +26,7 @@
 				print "class=\"$class\">";
 			}
 				print "<input type=\"text\" name=\"search_input\" ";
-				if ($enabled_speech == "true")
+				if ($enable_speech == "true")
 				{
 					print "x-webkit-speech ";
 				}
@@ -40,9 +40,9 @@
 					print "placeholder=\"$input_box_message\" />";
 				}
 
-				if ($search_buttom_message = "")
+				if ($search_button_message == "")
 				{
-					
+					print "<button type=\"submit\">Search</buttin>";
 				}
 				else{
 					print "<button type=\"submit\">$search_button_message</button>";

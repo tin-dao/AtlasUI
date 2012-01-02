@@ -52,7 +52,7 @@
 		mail($recipient, $subject , $message, "From: " . $email);
 		if ($message !== "")
 		{
-			header("Location: #");
+			print "<meta http-equiv=\"refresh\" content=\"0.5;url=#\" />";
 		}
 		else{
 			

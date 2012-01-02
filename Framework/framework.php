@@ -7,6 +7,8 @@
 			<link rel="stylesheet" type="text/css" href="../Framework/custom.css" />
 			<link rel="stylesheet" type="text/css" href="Framework/all.css" />
 			<link rel="stylesheet" type="text/css" href="Framework/custom.css" />
+			<link rel="stylesheet" type="text/css" href="all.css" />
+			<link rel="stylesheet" type="text/css" href="custom.css" />
 			<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	</head>
 	<body>
@@ -57,8 +59,9 @@
 
 			include("social/facebook.php");
 			include("social/flattr_button.php");
-			include("social/google_plus_one.php");
 			include("social/google_buzz.php");
+			include("social/google_plus_badge.php");
+			include("social/google_plus_one.php");
 			include("social/evovid.php");
 			include("social/reddit.php");
 			include("social/spotify.php");
