@@ -1,71 +1,91 @@
-       FreeSoft Licensing v1.5.2
-About
-       
-       	We takes pride in open source and free software. However we don't find the majority of open source licensing to be adequate for our organization and the software developed by the community. So we have developed our own licensing to fit our needs and the needs of the user(s).
-      	
-	The FreeSoft license follows many of the same things that GNU, SimpL and multiple other free, open source licenses however our licenses follow the following guidelines. Please note that it is divided into two sections, hardware and software related projects.
-       
-	This document discusses the FreeSoft Licensing version 1.5, revision 2. Please note that all non-English versions of this license are unofficial and may have errors. We recommend you regard to this license as much as possible.
+			FreeSoft Licensing v1.5.3
 
-Hardware Projects
-       
-       	Distribution & Download Rights
-       	
-       		1. The user is able download the blueprints of such hardware for free.
-		2. The user is able distribute a unmodified and/or modified version of the blueprints of such hardware without any restrictions.
-       	
-       	Liability
-       	
-       		1. In no way is the designer of such blueprints liable for any damages to the end-user or anything under the end-user’s ownership.
-    		2. In no way is the designer required to compensate for any monetary or resource lose if a user decides to utilize such blueprints.
-    	
-    	Modification Rights
-    	
-    		1. The downloader/end-user of any project blueprint is allowed to modify it accordingly without paying any fees, restrictions or anything that may act as a barrier for such user.
-    		2. The user is able to review the blueprint on and offline. If there is no project or blueprint viewing page, the Atlas Open Source Development Team is willing to provide such resources.
-    		3. The designer of such blueprints may not display and/or copyright any materials or brand such design and claim it as theirs.
-    	
-    	Sell / Resell Rights
-    	
-	    	1. The designer may sell a built model of such blueprint (not the blueprint itself).
-		2. The buyer of such product may not resell it, even with modifications. However they are allowed to modify the blueprints and sell their modified built model based such modified blueprint(s).
-	
-       
-Software Projects
-       
-	Distribution & Download Rights
-	
-		1. The user is able to download the software (and source code) for free.
-		2. Both the developer and user (who may wish to redistribute) may not discriminate against any persons and/or groups when releasing their source code or software.
-		3. The user must be able to download the source code, along with it's built form (.exe, .deb, .rpm, .tar.gz, .dmg).
-			Note: It is recommended that they be kept separate, however if only the built form is released, within the built form there must be the source code.
-			
-		4. The FreeSoft License does not require other software distributed with "FreeSoft licensed software" to be under the FreeSoft License. For instance, AOSDT’s project known as AtlasUI is licensed under the FreeSoft Licensing, however it may include GNU-licensed software with it such as GIMP.
-	
-	Liability
-	
-		1. In no way is the developer responsible for any harm to your computer when using their software. Unless it is thought to be intentional, the developer is not required to pay for any damages. Thoughts of intention would be the spreading of malware, spyware, viruses and any harmful, data corrupting code.
-		2. The user is protected by the license. The user is not required to stop the use of any software, nor can the developer infringe on any of the rights of the user.
-		3. To ensure lack of confusion, once a software is released under the AOSDT FreeSoft License v1.5, it is required to stay under that licensing unless otherwise noted under the following cases:
-			1. Major Contributors (Developers) no longer develop the program and / or it's source code.
-			2. Software is moving over to a updated version of the AOSDT FreeSoft Licensing.
-	
-	Modification Rights
-	
-		1. The user is able to freely modify the software and it's source code.
-		2. The user is allowed access to the source code online and offline. This means the user is not restricted to viewing such source code to an online resource.
-		3. The developer(s) are not allowed to display any "copyright" nor copyright such software, but instead they CAN create something called an Contributor's Page, which displays the list of developers and what changes they have made.
-			
-			Note: Any User who modifies the code is not required to notify the previous developers, however must include their name and changes they have made in the Contributor's Page. 
-			
-		4. The user is not required to notify the previous developer of any change(s) to the software or source code(s), however, like always, it is recommend as to embrace the ways of free software and notify the primary developers.
-	
-	Sell / Resell Rights
-	
-		1. The Developer(s) of the software(s) can not sell or resell the software and/or it's source code while under the FreeSoft License.
-		2. The end-user may not sell the software if it is licensed under the FreeSoft license.
-	
-     
-Difference Between Open Source Licenses and Ours
+				About
 
-     	Unlike the GNU Licensing, we push for software that is free AS IN FREEDOM and free AS IN COST. We find it pointless for a developer to release the source to his/her program then charge for a built version, when the user can just download the source code and build it themselves. So, to take away this irony, we have decided to require all software to be free. We have also deemed it unnecessary for developers to go on an ego trip by allowing them to copyright their materials, so we have ”banned” such ability and only allowed "Contributors List", as per stated in the Modification Rights point # 3.
+FreeSoft Licensing was designed from the ground-up to be a license
+in which users and developers alike can utilize for absolute
+freedom and free as in cost.
+
+The major goal of this license is to re-evaluate and establish a
+ new paradigm in development that removes boundaries such as
+ copyrights and patents, while providing developers and users
+ intellectual property rights and a socially acceptable way of
+ crediting a developer for their work.
+
+This license aims to protect intellectual rights while removing
+ boundaries that prevents other developer from utilizing software
+ and code, along with removing boundaries for end users of the
+ source code or software.
+
+
+			  Definitions
+
+"FreeSoft License" refers to version 1.5.3 of the FreeSoft License.
+
+"Copyright" also means copyright-like laws apply to other kinds of
+ works.
+
+"Software" refers to any collection of programs or operating
+ information utilized by a computer.
+
+"Program"(s) is provided instructions for an automatic performance
+ of a task.
+
+		  Terms And Conditions
+
+Software that is free must be free as in cost as well. With that in
+ mind, distribution of software or code under the FreeSoft
+ Licensing must be free to download, without discrimination towards
+ any persons and/or groups, under the requirements that
+ distribution of software include a verbatim copy of this
+ License.
+
+In the event that such software is distributed in a BUILT form,
+ developers and users must be able to download the source code
+ either separately, or through a free medium built into the
+ software. FreeSoft License does not require other software
+ distributed with FreeSoft Licensed software to be licensed under
+ such Licensing.
+
+Under circumstances in which such developers of code licensed under
+ Freesoft License cease distribution of such software or source
+ code, previous nor future developers or end-users of such software
+ are not required to cease distribution and withhold their rights
+ provided by FreeSoft License.
+
+Under so circumstance is any developer that releases such software
+ or code under liability for any damages to any entity or item nor
+ is there any warranty requirements provided with distribution of
+ such software.
+
+
+Under no liabilty and with the allowance of distribution and
+ downloading, developers and end-users alike are permitted to
+ freely modify the software and/or source code along with provided
+ acccess to such source code online and offline, hereby nullifying
+ requirements for online viewing.
+
+Developers of modified versions of such software, nor the initial
+ distributors, are permitted to display any copyright notification
+ or copyright such software and are merely permitted to create a
+ Contributors page and/or file that displays a list of individuals
+ that contributed to such software. Modification of such software
+ does not require any future developers to directly contribute code
+ or notify previous developers or initial distributors, however such
+developers and/or end-users must include previous developer
+contributors information.
+
+In the event a license is distributed with FreeSoft Licensing, the
+ developer is not permitted to sell, nor is any future developer or
+ end user permitted to resell, software and/or source code while
+ FreeSoft Licensing.
+
+In the event of modification, developers of modified versions of
+ such software and/or source code are not permitted to relicense
+ such software unless in the circumstance that the initial
+ distributors and/or developers of such software relicense.
+
+In the event of licensing changes, current users are not required
+ to cease distribution of their software, their permitted rights
+ under FreeSoft Licensing are not waived, and all existing copies
+ of FreeSoft licensed software are not relicensed.
