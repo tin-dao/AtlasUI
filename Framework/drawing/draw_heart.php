@@ -12,7 +12,7 @@
 		}
 		elseif ($same_dir == "sub_folder")
 		{
-			$path_to_image = "/Framework/images/shape_heart.svg";
+			$path_to_image = "Framework/images/shape_heart.svg";
 		}
 		else{
 			$path_to_image = $same_dir . "/images/shape_heart.svg";

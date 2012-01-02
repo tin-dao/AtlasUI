@@ -53,13 +53,13 @@
 			}
 			elseif ($same_dir == "sub_folder")
 			{
-				$path_to_image = "/Framework/images/social/facebook.png";
+				$path_to_image = "Framework/images/social/facebook.png";
 			}
 			else{
 				$path_to_image = $same_dir . "/images/social/facebook.png";
 			}
 
-			print "&redirect_uri=http://facebook.com\" target=\"_blank\"><img src=\"$path_to_image\" /></a>";
+			print "&redirect_uri=http://facebook.com\" target=\"_blank\"><img src=\"$path_to_image\" width=\"32px\" height=\"32px\"/></a>";
 		}
 		else{
 			print "You need to add an App ID to facebook_share!";
