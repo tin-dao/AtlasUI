@@ -1,4 +1,4 @@
-This is v0.38 Alpha 4 / Peppermint Release of AtlasUI Web Framework. This framework version includes:
+This is v0.39 Alpha 5 / Peppermint Release of AtlasUI Web Framework. This framework version includes:
 
 -------Main Implementations-------
 - AtlasUI FTP Login
@@ -18,11 +18,19 @@ This is v0.38 Alpha 4 / Peppermint Release of AtlasUI Web Framework. This framew
 -------Graph Implementations-------
 - (Draw) Heart [SVG]
 
+-------Math Libary-------
+- alibmath (Primary Library File)
+  - Add Integer Array
+  - Multiply Integer Array
+  - Multiply Integer by Pi
+  - Multiply Integer By A Power
+
 -------Social Implementations-------
 - EvoVid Badges & Videos
-- Facebook Badges
+- Facebook Share & Facebook Likes
 - Flattr Badges
 - Google +1 Button
+- Google+ Profile Badge
 - Google Buzz Button
 - OpenGraph Metadata
 - Reddit Button
@@ -33,4 +41,4 @@ This is v0.38 Alpha 4 / Peppermint Release of AtlasUI Web Framework. This framew
 And More...
 
 // This project is an official project of AOSDT (Atlas Open Source Development Team) //
-// Licensed under the FreeSoft Licensing v1.5, revision 2.//
+// Licensed under the FreeSoft Licensing v1.5, revision 3.//
