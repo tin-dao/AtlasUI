@@ -160,12 +160,13 @@
 	
 		.search_module{
 			min-width: 250px;
+			width: auto;
 			height: 32px;
 			float: left;
 			position: inherit;
 			border: 1px solid #CCCCCC;
-			border-radius: 5px;
-			-moz-border-radius: 5px;
+			border-radius: 10px;
+			-moz-border-radius: 10px;
 			margin: 3px;
 		}
 		
@@ -173,10 +174,11 @@
 			float: left;
 			width: auto;
 			height: 30px;
-			font-size: 15px;
+			font-size: 14px;
 			border: 0px;
 			background-color: transparent;
 			font-family: 'Droid Sans', sans-serif;
+			color: #333333;
 		}
 		
 		.search_module button{
@@ -189,11 +191,11 @@
 			border-top: 0px;
 			border-right: 0px;
 			border-bottom: 0px;
-			background-color: white;
+			background-color: transparent;
 			text-align: center;
 			line-height: 30px;
-			color: #666666;
-			font-size: 15px;
+			color: #333333;
+			font-size: 14px;
 			font-family: 'Droid Sans', sans-serif;
 		}
 	/* End Search */

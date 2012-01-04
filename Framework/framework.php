@@ -48,6 +48,7 @@
 
 			include("plugins/atlasui_encrypt.php");
 			include("plugins/atlasui_ftp_login.php");
+			include("plugins/atlasui_ip_address.php");
 			include("plugins/atlasui_sql_connect.php");
 			include("plugins/atlasui_url_address.php");
 			include("plugins/opengraph.php");
