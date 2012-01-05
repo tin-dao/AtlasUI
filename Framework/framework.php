@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<html xmlns:og="http://ogp.me/ns#">
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:og="http://ogp.me/ns#"
+	prefix="bibo: http://purl.org/ontology/bibo/
+		cal: http://www.w3.org/2002/12/cal/ical#
+		dc: http://purl.org/dc/terms/
+		foaf: http://xmlns.com/foaf/0.1/"
+>
 	<head>
 			<link rel="stylesheet" type="text/css" href="../all.css" />
 			<link rel="stylesheet" type="text/css" href="../custom.css" />
