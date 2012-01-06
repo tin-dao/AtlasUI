@@ -46,6 +46,7 @@
 			
 			include("browser/notification.php");
 			include("browser/redirect.php");
+			include("browser/ymp_install.php");
 			
 		  /* Import Math Framework / Library */
 		  

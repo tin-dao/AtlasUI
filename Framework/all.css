@@ -249,6 +249,7 @@
 
 /* This is the beginning of the AtlasUI Browser Interaction styling */
 
+/* Browser Notification CSS */
 .atlasui_notification
 {
 	width: 300px;
@@ -311,6 +312,21 @@
 	75% {opacity: 1.0;}
 	100% {opacity: 0;}
 }
+
+/* End of Browser Notification CSS */
+
+/* YMP-Install Button CSS */
+
+.ymp_install{
+	width: 162px;
+	height: 46px;
+	background-image: url("http://en.opensuse.org/images/f/f1/Oneclick.png");
+	text-decoration: none;
+	float: left;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+/* End of YMP-Install Button CSS */
 
 /* This is the end of the AtlasUI Browser Interaction styling */
 
