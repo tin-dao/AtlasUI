@@ -2,7 +2,7 @@
 
 	function evovid_badge($username){
 
-		print "<iframe src=\"http://evovid.com/apis/badge?u=" . $username . "\" width=\"265px\" height=\"150px\" frameborder=\"0\"></iframe>";
+		print "<iframe src=\"http://evovid.com/apis/badge?u=" . $username . "\" width=\"250px\" height=\"120px\" frameborder=\"0\"></iframe>";
 
 	}
 
