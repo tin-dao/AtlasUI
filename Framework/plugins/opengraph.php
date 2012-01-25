@@ -15,9 +15,9 @@
 			// Determines if the type is actually a location or not as no OpenGraph type is more than 15 characters long //
 			$catchLength = 15;
 			$typeLength = strlen($type);
-			if ($typeLength > $catchLength)
+			if ($typeLength < $catchLength)
 			{
-				print "<meta property=\"og:type=\" content=\"$type\" />";
+				print "<meta property=\"og:type\" content=\"$type\" />";
 			}
 			else{
 				$locationExplode = explode("|", $type, 5);
