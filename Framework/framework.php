@@ -62,6 +62,7 @@
 				include("plugins/atlasui_ip_address.php");
 				include("plugins/atlasui_sql_connect.php");
 				include("plugins/atlasui_url_address.php");
+				include("plugins/ekiga_button.php"); // Wrapper for Ekiga.Net JavaScript button to determine status of Ekiga.Net user.
 				include("plugins/opengraph.php");
 				include("plugins/google_maps_static.php");
 				include("plugins/paypal.php");
