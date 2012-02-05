@@ -10,3 +10,5 @@
 			print "<b>Please add your Ekiga.Net username!</b>";
 		}
 	}
+	
+?>
