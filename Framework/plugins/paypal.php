@@ -1,6 +1,6 @@
 <?php
 
-	function paypal_button($paypal_email, $item_name, $item_cost, $currency_code, $no_note, $no_shipping, $tax_rate, $shipping_cost)
+	function paypal_button($paypal_email, $item_name, $item_cost, $currency_code, $no_note, $no_shipping, $tax_rate, $shipping_cost, $finish_url)
 	{
 		$currency_array = array("EUR","AUD","BRL","GBP","CAD","CZK","DKK","HKD","HUF","ILS","JPY","MXN","TWD","NZD","NOK","PHP","PLN","SGD","SEK","CHF","THB","USD");
 		print "<form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">";
@@ -43,6 +43,14 @@
 		if ($shipping_cost < "0.00")
 		{
 			$shipping_cost = "0.00";
+		}
+		
+		if ($finish_url == "")
+		{
+			
+		}
+		else{
+			print "<input type=\"hidden\" name=\"return\" value=\"$finish_url\">";
 		}
 		
 		print "<input type=\"hidden\" name=\"tax_rate\" value=\"$tax_rate\">";
