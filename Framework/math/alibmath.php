@@ -40,4 +40,9 @@
 		return (pow($int, $power));
 	}
 	
+	function isOdd($integer)
+	{
+		return ($integer%2) ? TRUE : FALSE;
+	}
+}
 ?>
