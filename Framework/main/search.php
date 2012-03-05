@@ -6,8 +6,6 @@
 	  
 	function search($type_of_form, $filepath_or_uniqueid, $input_box_message, $enable_speech, $search_button_message, $class){
 		
-		$nodes_query = $_POST["nodesquery"];
-		$nodes_type = $_POST["nodestype"];
 		$search_input = $_POST["search_input"];
 
 		if ($type_of_form !== "cse")
