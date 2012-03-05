@@ -44,5 +44,5 @@
 	{
 		return ($integer%2) ? TRUE : FALSE;
 	}
-}
+
 ?>
