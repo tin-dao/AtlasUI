@@ -8,14 +8,8 @@
 		foaf: http://xmlns.com/foaf/0.1/"
 >
 	<head>
-			<link rel="stylesheet" type="text/css" href="../all.css" />
-			<link rel="stylesheet" type="text/css" href="../custom.css" />
-			<link rel="stylesheet" type="text/css" href="../Framework/all.css" />
-			<link rel="stylesheet" type="text/css" href="../Framework/custom.css" />
 			<link rel="stylesheet" type="text/css" href="Framework/all.css" />
 			<link rel="stylesheet" type="text/css" href="Framework/custom.css" />
-			<link rel="stylesheet" type="text/css" href="all.css" />
-			<link rel="stylesheet" type="text/css" href="custom.css" />
 			<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	</head>
 	<body>

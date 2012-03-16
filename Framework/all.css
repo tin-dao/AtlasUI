@@ -86,8 +86,11 @@
 			margin-right: 2.5%;
 			height: 40px;
 			overflow: hidden;
-			background-image: url("images/menubar_bg.png");
-			background-repeat: repeat-x;
+			background: -webkit-linear-gradient(top, #666666, #000000);
+			background: -moz-linear-gradient(top, #666666, #000000);
+			background: -ms-linear-gradient(top, #666666, #000000);
+			background: -o-linear-gradient(top, #666666, #000000);
+			background-color: #333333;
 			border-radius: 5px;
 			-moz-border-radius: 5px;
 		}
