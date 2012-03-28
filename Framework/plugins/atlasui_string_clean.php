@@ -11,7 +11,7 @@
 			$characterCleaning = str_replace(array("\"", "'", ";", '"'), "", $uncleanString);
 		}
 		else{
-			$characterCleaning = str_replace(array("\"", "'", ";", "(", ")", '"'), "", $uncleanString);
+			$characterCleaning = str_replace(array("\"", "*", "'", ";", "(", ")", '"'), "", $uncleanString);
 		}
 		
 		if ($cleanStringTags = true)

@@ -10,7 +10,6 @@
 	<head>
 			<link rel="stylesheet" type="text/css" href="Framework/all.css" />
 			<link rel="stylesheet" type="text/css" href="Framework/custom.css" />
-			<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	</head>
 	<body>
 		<!-- AtlasUI Web Framework is 100% free as in freedom and 100% free as in cost, licensed under the FreeSoft Licensing.
