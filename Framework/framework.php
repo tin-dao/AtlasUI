@@ -2,10 +2,6 @@
 <html
 	xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:og="http://ogp.me/ns#"
-	prefix="bibo: http://purl.org/ontology/bibo/
-		cal: http://www.w3.org/2002/12/cal/ical#
-		dc: http://purl.org/dc/terms/
-		foaf: http://xmlns.com/foaf/0.1/"
 >
 	<head>
 			<link rel="stylesheet" type="text/css" href="Framework/all.css" />
@@ -69,6 +65,7 @@
 				include("social/google_buzz.php");
 				include("social/google_plus_badge.php");
 				include("social/google_plus_one.php");
+				include("social/google_plus_share.php");
 				include("social/evovid.php");
 				include("social/reddit.php");
 				include("social/spotify.php");
