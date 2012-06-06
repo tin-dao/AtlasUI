@@ -57,6 +57,7 @@
 				include("plugins/google_maps_static.php");
 				include("plugins/paypal.php");
 				include("plugins/powered_by.php"); // Powered by AtlasUI Web Framework banner - integration is completely optional of course //
+				include("plugins/skype.php");
 
 			/* Import Social Network Framework */
 
