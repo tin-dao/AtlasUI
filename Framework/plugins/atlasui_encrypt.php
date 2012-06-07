@@ -16,7 +16,8 @@
 		else{
 			/* Falls back to Default or "Strong" */
 			$initial_encryption = sha1(md5($string));
-			$encrypted_string = $initial_encryption . "e" . crypt($initial_encryption, 'a7');
+			$hash = crypt($initial_encryption, '$6$rounds=10000$at0las486ui$');
+			$encrypted_string = str_replace('$6$rounds=10000$at0las486ui$', '', $hash);
 			return $encrypted_string;
 		}
 	}
