@@ -1,6 +1,6 @@
 <?php
 
-	function atlasui_encrypt($string, $level, $hashString)
+	function atlasui_encrypt($string, $level, $rounds, $hashString)
 	{
 		if ($level == "low")
 		{
@@ -16,8 +16,8 @@
 		else{
 			/* Falls back to Default or "Strong" */
 			$initial_encryption = sha1(md5($string));
-			$hash = crypt($initial_encryption, '$6$rounds=10000$' . $hashString . '$');
-			$encrypted_string = str_replace('$6$rounds=10000$' . $hashString . '$', '', $hash);
+			$hash = crypt($initial_encryption, '$6$rounds=' . $rounds . '$' . $hashString . '$');
+			$encrypted_string = str_replace('$6$rounds=' . $rounds . '$' . $hashString . '$', '', $hash);
 			return $encrypted_string;
 		}
 	}
