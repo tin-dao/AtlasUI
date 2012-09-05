@@ -1,6 +1,6 @@
 <?php
 
-	function atlasui_cc_button($optional_info, $commercial_use, $allow_modifications)
+	function cc_button($optional_info, $commercial_use, $allow_modifications)
 	{
 		print "<div class=\"cc_button\">";
 			if ($optional_info !== "")

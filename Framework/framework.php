@@ -8,17 +8,18 @@
 			<link rel="stylesheet" type="text/css" href="Framework/custom.css" />
 	</head>
 	<body>
-		<!-- AtlasUI Web Framework is 100% free as in freedom and 100% free as in cost, licensed under the FreeSoft Licensing.
-			To view the licensing, go to http://freesoft.aosdt.com. To download and distribute your own
-			copy of AtlasUI Web Framework, go to http://github.com/JoshStrobl/AtlasUI for more information -->
-	
+
 		<?php
+			
+		/* AtlasUI Web Framework is 100% free as in freedom and 100% free as in cost, licensed under the FreeSoft Licensing.
+		To view the licensing, view FreeSoft.txt. To download and distribute your own
+		copy of AtlasUI Web Framework, go to http://github.com/JoshStrobl/AtlasUI for more information */
 			
 			error_reporting(E_ERROR | E_WARNING | E_PARSE);
 			
 			/* Import Audio and Video Framework */
 
-				include("media/atlasui_cc_buttons.php");
+				include("media/cc_button.php");
 				include("media/audio.php");
 				include("media/video.php");
 			
@@ -30,7 +31,6 @@
 
 				include("main/contactform.php");
 				include("main/menubar.php");
-				include("main/module.php");
 				include("main/search.php");
 				include("main/topbar.php");
 
@@ -56,14 +56,13 @@
 				include("plugins/opengraph.php");
 				include("plugins/google_maps_static.php");
 				include("plugins/paypal.php");
-				include("plugins/powered_by.php"); // Powered by AtlasUI Web Framework banner - integration is completely optional of course //
+				include("plugins/powered_by.php");
 				include("plugins/skype.php");
 
 			/* Import Social Network Framework */
 
 				include("social/facebook.php");
 				include("social/flattr_button.php");
-				include("social/google_buzz.php");
 				include("social/google_plus_badge.php");
 				include("social/google_plus_one.php");
 				include("social/google_plus_share.php");
