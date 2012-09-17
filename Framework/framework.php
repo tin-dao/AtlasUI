@@ -10,6 +10,7 @@
 	<body>
 
 		<?php
+		
 			
 		/* AtlasUI Web Framework is 100% free as in freedom and 100% free as in cost, licensed under the FreeSoft Licensing.
 		To view the licensing, view FreeSoft.txt. To download and distribute your own
@@ -58,6 +59,7 @@
 				include("plugins/paypal.php");
 				include("plugins/powered_by.php");
 				include("plugins/skype.php");
+				include("plugins/speed_library.php");
 
 			/* Import Social Network Framework */
 
