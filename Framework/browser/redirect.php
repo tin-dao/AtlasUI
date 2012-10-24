@@ -1,10 +1,10 @@
 <?php
 
-	function atlas_redirect($url, $seconds){
+	function atlasui_redirect($url, $seconds){
 
-		if ($seconds < "0.5")
+		if ($seconds < 0.5)
 		{
-			$seconds = "0.5";
+			$seconds = 0.5;
 		}
 		else{
 			$seconds = $seconds;
