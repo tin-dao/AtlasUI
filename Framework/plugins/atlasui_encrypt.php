@@ -15,9 +15,11 @@
 		}
 		else{
 			/* Falls back to Default or "Strong" */
+			
+			$cleanLength = strlen("$6$rounds=" . $rounds . "$" . $hashString . "$");
 			$initial_encryption = sha1(md5($string));
-			$hash = crypt($initial_encryption, '$6$rounds=' . $rounds . '$' . $hashString . '$');
-			$encrypted_string = str_replace('$6$rounds=' . $rounds . '$' . $hashString . '$', '', $hash);
+			$hash = str_replace(array("/", "\\", '"'), "", crypt($initial_encryption, '$6$rounds=' . $rounds . '$' . $hashString . '$'));
+			$encrypted_string = substr($hash, $cleanLength);
 			return $encrypted_string;
 		}
 	}
