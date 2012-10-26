@@ -2,6 +2,7 @@
 
 	function notification($title, $message)
 	{
+		print "<link rel=\"stylesheet\" type=\"text/css\" href=\"Framework/all.css\" />";
 		print "<div class=\"atlasui_notification\">";
 			if ($title !== "")
 			{

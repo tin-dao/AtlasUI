@@ -10,7 +10,6 @@
 			$seconds = $seconds;
 		}
 		print "<meta http-equiv=\"refresh\" content=\"" . $seconds . ";url=" . $url . "\" />";
-		print "Redirecting...";
 	}
 
 ?>

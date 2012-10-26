@@ -1,8 +1,9 @@
 Current Release:
-March 1st, 2010 - 0.39.5 Alpha 5 MAINTENANCE Release / PepperMint Build
+October 26th, 2012 - 0.39.9 PREPARATION Release / Peppermint Build
 
 Prior Releases:
-January 2nd, 2012 - 0.39.0 Alpha 5 Release / PepperMint Build
+March 1st, 2012 - 0.39.5 Alpha 5 MAINTENANCE Release / Peppermint Build
+January 2nd, 2012 - 0.39.0 Alpha 5 Release / Peppermint Build
 October 17th, 2011 - 0.38.0 Alpha 4 Release / Peppermint Build
 October 1st, 2011 - 0.37.0 Alpha 3 Release / Peppermint Build
 September 16th, 2011 - 0.36.1 Alpha 2 Release / Peppermint Build (Fix Build)

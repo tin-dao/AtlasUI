@@ -4,7 +4,7 @@
 	{
 		$get_url = $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
 		
-		if ($clean_for_social_networks == ("yes" || "true"))
+		if ($clean_for_social_networks == true)
 		{
 			$unclean_path_parts = array(":","/",);
 			$clean_path_parts = array("%3A","%2F",);

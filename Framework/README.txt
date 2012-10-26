@@ -1,10 +1,15 @@
-This is v0.39.5 Alpha 5 (Maintenance) / Peppermint Release of AtlasUI Web Framework.
+This is v0.39.9 Peppermint Release of AtlasUI Web Framework.
+
+AtlasUI Web Framework is currently undergoing some massive changes, so its recommended to wait for the 0.40 update. AtlasUI Web Framework 0.39.9 
+has already stripped out most prior release features, to make AtlasUI gradually prepare for the 0.40 release, which will be clear defining of AtlasUI.
+
+Redefinition of AtlasUI Web Framework: A web framework for web data management and user interactivity.
+
 The following list is what AtlasUI consists of at this moment in time:
 
 -------Browser Oriented-------
 - Notifications
 - Redirections
-- YMP File Installer Button
 
 -------Main Implementations-------
 - AtlasUI FTP Login
@@ -12,12 +17,8 @@ The following list is what AtlasUI consists of at this moment in time:
 - AtlasUI String Encrypt
 - AtlasUI URL Address
 - Audio
-- Contact Form
 - I.P. Address Detection
-- Main Modules
-- Menubar
-- Search Form
-- Topbar
+- OpenGraph Metadata
 - Video
 
 -------Drawing and Graphing Implementations-------
@@ -32,20 +33,17 @@ The following list is what AtlasUI consists of at this moment in time:
   - Multiply Integer By A Power
 
 -------Social Implementations-------
+
 - Ekiga Button
-- EvoVid Badges & Videos
 - Facebook Share & Facebook Likes
 - Flattr Badges
 - Google +1 Button
 - Google+ Profile Badge
 - Google Buzz Button
 - Google Static Maps
-- OpenGraph Metadata
-- Powered By AtlasUI (Not Automatically Added To Page)
 - Reddit Button
 - Spotify Follow Button
 - Twitter Follow, Tweet & Profile modules
 - Youtube Advanced Video Embedding
 
-// This project is an official project of AOSDT (Atlas Open Source Development Team) //
 // Licensed under the FreeSoft Licensing v1.5, revision 3.//
