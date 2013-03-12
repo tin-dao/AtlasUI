@@ -1,41 +1,23 @@
 <?php
 
-	function youtube($vid_id, $hd_or_normal, $privacy_mode, $height, $width){
+	function youtubePlayer($youtubeVideoID, $youtubeVideoDefinition = "720", $youtubePrivacyMode = false){
+		if (isset($youtubeVideoID)){
+			$youtubeVideoDefinition_Height = str_replace(array("360", "480", "720"), array("640", "853", "1280"), $youtubeVideoDefinition);
+			print "<iframe width=\"$youtubeVideoDefinition\" width=\"$youtubeVideoDefinition\" height="$youtubeVideoDefinition_Height\" ";
 
-		print "<iframe width=\"";
-		if ($width !== "")
-		{
-			print $width;
+				if ($youtubePrivacyMode == false){
+					$youtubeEmbedUrl = "https://www.youtube.com/embed/" . $youtubeVideoID;
+				}
+				else{
+					$youtubeEmbedUrl = "https://www.youtube-nocookie.com/embed/" . $youtubeVideoID;
+				}
+
+				print "src=\"$youtubeEmbedUrl?rel=0\" frameborder=\"0\" allowfullscreen>";
+			print "</iframe>";
 		}
 		else{
-			print "560\"";
+			print "error_no_youtube_id";
 		}
-		if ($height !== "")
-		{
-			print "height=\"" . $height . "\"";
-		}
-		else{
-			print "height=\"345\"";
-		}
-
-		print "src=\"";
-
-		if ($privacy_mode == "true")
-		{
-			print "http://www.youtube-nocookie.com/embed/" . $vid_id;
-		}
-		else{
-			print "http://www.youtube.com/embed/" . $vid_id;
-		}
-		if ($hd_or_normal == "normal")
-		{
-			print "\"";
-		}
-		else{
-			print "?hd=1\"";
-		}
-		print "frameborder=\"0\" allowfullscreen></iframe>";
-
 	}
 
 ?>

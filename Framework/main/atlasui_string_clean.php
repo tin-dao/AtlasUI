@@ -10,7 +10,7 @@
 			$characterCleaning = str_replace(array('"', "*", "'", "(", ")"), array("&#34;", "&#42;", "&#39;", "&#40;", "&#41;"), $uncleanString);
 		}
 		
-		if ($cleanStringTags = true)
+		if ($cleanStringTags === true)
 		{
 			$cleanString = strip_tags($characterCleaning, '<pre></pre><ul></ul><ol></ol><li></li><p></p><u></u><b></b><i></i>');
 		}

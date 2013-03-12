@@ -1,34 +1,16 @@
 <?php
 
-	function reddit($set_or_dynamic, $url, $image){
-		print "<a href=\"http://www.reddit.com/submit?url=";
-		if ($set_or_dynamic == "set")
-		{
-			print $url;
-		}
-		elseif ($set_or_dynamic == "dynamic")
-		{
-			$url = atlasui_url_address("yes");
-			print $url;
+	function reddit($shareUrl = ""){
+		if ($shareUrl == ""){
+			$shareUrl = atlasui_url_address("", true);
 		}
 		else{
-			print "\"></a>You will need to choose set or dynamic on your Framework reddit function.";
+			$shareUrl = atlasui_url_address($shareUrl, true);
 		}
-		if ($set_or_dynamic == "set" || "dynamic")
-		{
-			print "\" target=\"_blank\">";
-			if ($image !== "default")
-			{
-				print "<img src=\"" . $image . "\" alt=\"Submit To Reddit!\" border=\"0\" />";
-			}
-			else{
-				print "<img src=\"http://www.reddit.com/static/spreddit7.gif\" alt=\"Submit To Reddit!\" border=\"0\" />";
-			}
-			print "</a>";
-		}
-		else{
-		
-		}
+
+		print "<a href=\"http://www.reddit.com/submit?url=$shareUrl>";
+			print "<img src=\"http://www.reddit.com/static/spreddit7.gif\" alt=\"Submit To Reddit!\" border=\"0\" />";
+		print "</a>";
 	}
 
 ?>

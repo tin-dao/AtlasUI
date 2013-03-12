@@ -1,37 +1,26 @@
 <?php
 
-	function twitter_follow($user)
-	{
-
+	function twitter_follow($user){
 		print "<iframe allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\"
-  src=\"http://platform.twitter.com/widgets/follow_button.html?screen_name=" . $user . "\"
-  style=\"width:300px; height:20px;\"></iframe>";
-
+  			src=\"http://platform.twitter.com/widgets/follow_button.html?screen_name=" . $user . "\"
+  			style=\"width:300px; height:20px;\">
+  		</iframe>";
 	}
 
-	function twitter_tweet($url, $via, $tweet_text){
+	function twitter_tweet($shareUrl = "", $twitterVia = "", $twitterTweet = ""){
+		if (isset($twitterVia)){
+			print "<a href=\"https://twitter.com/share\" class=\"twitter-share-button\" ";
 
-		print "<iframe allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\"
-  src=\"http://platform.twitter.com/widgets/tweet_button.html?screen_name=$via&amp;";
-		if ($url !== "page_url")
-		{
-			$stripcolons = str_replace(":","%3A", $url);
-			$tweeturl = str_replace("/","%2F", $stripcolons);
-			print "url=$tweeturl";
-		}
-		else{
-			$tweeturl = atlasui_url_address("yes");
-			print "url=$tweeturl";
-		}
-		if ($tweet_text == "")
-		{
-			print "&amp;related=AtlasUI\"";
-		}
-		else{
-			print "&amp;text=$tweet_text&amp;related=AtlasUI\" ";
-		}
-		print "style=\"width:300px; height:20px;\"></iframe>";
+				if ($shareUrl !== ""){
+					print "data-url=\"$shareUrl\" ";
+				}
 
+				print "data-via=\"$twitterVia\" ";
+				print "data-lang=\"en\"";
+			print ">Tweet</a>";
+			print "<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=\"
+			https://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>";
+		}
 	}
 
 	function twitter_profile($profile, $width, $height, $shell_bg, $shell_text, $tweets_bg, $tweets_text, $tweets_links, $show_hashtags, $show_timestamps, $show_avatars)

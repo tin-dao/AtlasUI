@@ -4,19 +4,15 @@
 
 		include("media/audio.php");
 		include("media/video.php");
-	
-	/* Import AtlasUI Drawing and Graphics Framework */
-	
-		include("drawing/draw_heart.php");
 
 	/* Import AtlasUI Main Modules */
 
+		include("main/atlasui_address.php");
 		include("main/atlasui_encrypt.php");
 		include("main/atlasui_ftp_login.php");
-		include("main/atlasui_ip_address.php");
+		include("main/atlasui_mysqli_result.php");
 		include("main/atlasui_sql_connect.php");
 		include("main/atlasui_string_clean.php");
-		include("main/atlasui_url_address.php");
 		include("main/opengraph.php");
 		include("main/speed_library.php");
 
@@ -40,9 +36,7 @@
 
 		include("social/facebook.php");
 		include("social/flattr_button.php");
-		include("social/google_plus_badge.php");
-		include("social/google_plus_one.php");
-		include("social/google_plus_share.php");
+		include("social/google_plus.php");
 		include("social/reddit.php");
 		include("social/spotify.php");
 		include("social/twitter.php");

@@ -12,10 +12,9 @@
 			{
 				print "<meta property=\"og:site_name\" content=\"$site_name\" />";
 			}
-			// Determines if the type is actually a location or not as no OpenGraph type is more than 15 characters long //
-			$catchLength = 15;
-			$typeLength = strlen($type);
-			if ($typeLength < $catchLength)
+			
+			// Determines if the type is actually a location or not as no OpenGraph type is more than 15 characters long
+			if (strlen($type) < 15)
 			{
 				print "<meta property=\"og:type\" content=\"$type\" />";
 			}
@@ -37,7 +36,7 @@
 				print "<meta property=\"og:url\" content=\"$url\" />";
 			}
 			else{
-				$url = atlasui_url_address("yes");
+				$url = atlasui_url_address("", false);
 				print "<meta property=\"og:url\" content=\"$url\" />";
 			}
 			

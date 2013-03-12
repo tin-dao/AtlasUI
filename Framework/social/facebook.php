@@ -1,68 +1,57 @@
 <?php
 
-	function facebook_like($set_or_dynamic_url, $url, $width){
+	function facebook_like($applicationID, $shareUrl = false, $buttonColors = "light", $buttonLayout = "button_count", $buttonSend = "false", $buttonShowFaces, "false", $buttonHeight = "21", $buttonWidth = "55"){
+		if (strlen($applicationID) > 0){
+			print "<iframe src=\"//www.facebook.com/plugins/like.php?href=";
 
-		print "<iframe src=\"http://www.facebook.com/plugins/like.php?app_id=183840781689259&amp;";
-		if ($set_or_dynamic_url == "set")
-		{
-			$stripcolons = str_replace(":","%3A", $url);
-			$fburl = str_replace("/","%2F", $stripcolons);
-			print "href=$fburl";
-		}
-		elseif ($set_or_dynamic_url == "dynamic")
-		{
-			$fburl = atlasui_url_address("yes");
-			print "href=$fburl";
-		}
-		if ($width == "")
-		{
-			print "&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=segoe+ui&amp;height=80\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:450px; height:80px;\" allowTransparency=\"true\"></iframe>";
+				if ($shareUrl === false){
+					$shareUrl = atlasui_url_address();
+				}
+				else{
+					$shareUrl = atlasui_url_address($shareUrl, true);
+				}
+
+				print "$shareUrl&amp;send=$buttonSend&amp;layout=$buttonLayout&amp;width=$buttonWidth&amp;show_faces=$buttonShowFaces&amp;font=segoe+ui&amp;colorscheme=$buttonColors&amp;action=like&amp;height=21&amp;appId=$applicationID\" 
+					scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:$buttonWidth" . "px; height:$buttonHeight" . "px;\" allowTransparency=\"true\">";
+			print "</iframe>";
 		}
 		else{
-			print "&amp;send=false&amp;layout=standard&amp;width=" . $width . "&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=segoe+ui&amp;height=80\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:" . $width . "px; height:80px;\" allowTransparency=\"true\"></iframe>";
+			print "error_empty_appid";
 		}
-
 	}
 
-	function facebook_share($title, $description, $message, $app_id, $link, $same_dir)
-	{
-		$fbcompatibletitle = str_replace(" ", "%20", $title);
-		$fbcompatibledescription = str_replace(" ", "%20", $description);
-		$fbmessage = str_replace(" ", "%20", $message);
+	function facebook_share($applicationID, $shareTitle, $shareDescription = "", $shareUrl = false){
+		if (isset($applicationID)){
+			$fbTitle = str_replace(" ", "%20", $shareTitle);
+			$fbSescription = str_replace(" ", "%20", $description);
 
-		if ($app_id !== "")
-		{
-			print "<a href=\"http://www.facebook.com/dialog/feed?app_id=$app_id&link=$link&name=$fbcompatibletitle";
-			if ($fbcompatibledescription !== "")
-			{
-				print "&description=$fbcompatibledescription";
-			}
-			
-			if ($fbmessage !== "")
-			{
-				print "&message=$fbmessage";
+			if ($shareUrl === false){
+				$shareUrl = atlasui_url_address("", false);
 			}
 
-			if ($same_dir == "true")
-			{
-				$path_to_image = "/images/social/facebook.png";
-			}
-			elseif ($same_dir == "separate_folder")
-			{
-				$path_to_image = "../Framework/images/social/facebook.png";
-			}
-			elseif ($same_dir == "sub_folder")
-			{
-				$path_to_image = "Framework/images/social/facebook.png";
-			}
-			else{
-				$path_to_image = $same_dir . "/images/social/facebook.png";
-			}
-
-			print "&redirect_uri=http://facebook.com\" target=\"_blank\"><img src=\"$path_to_image\" width=\"32px\" height=\"32px\"/></a>";
+			print "<a href=\"http://www.facebook.com/dialog/feed?app_id=$applicationID&link=$shareUrl&name=$fbTitle";
+				if ($fbDescription !== "")
+				{
+					print "&description=$fbDescription";
+				}
+				
+				print "&redirect_uri=$shareUrl\" target=\"_blank\"";
+				print "style=\"
+					height: 28px;
+					width: 75px;
+					font-family: arial;
+					font-size: 14px;
+					color: #fafafa;
+					line-height: 28px;
+					text-align: center;
+					text-decoration: none;
+					background-color: #3b5998 !important;
+					border: 0px;\"";
+			print ">Share</a>";
 		}
 		else{
-			print "You need to add an App ID to facebook_share!";
+			print "error_empty_appid";
 		}
 	}
+	
 ?>
