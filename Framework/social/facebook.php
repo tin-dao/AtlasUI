@@ -1,10 +1,10 @@
 <?php
 
-	function facebook_like($applicationID, $shareUrl = false, $buttonColors = "light", $buttonLayout = "button_count", $buttonSend = "false", $buttonShowFaces, "false", $buttonHeight = "21", $buttonWidth = "55"){
-		if (strlen($applicationID) > 0){
+	function facebook_like($applicationID, $shareUrl = false, $buttonColors = "light", $buttonLayout = "button_count", $buttonSend = "false", $buttonShowFaces = "false", $buttonHeight = "21", $buttonWidth = "55"){
+		if (isset($applicationID)){
 			print "<iframe src=\"//www.facebook.com/plugins/like.php?href=";
 
-				if ($shareUrl === false){
+				if ($shareUrl == false){
 					$shareUrl = atlasui_url_address();
 				}
 				else{
@@ -23,9 +23,9 @@
 	function facebook_share($applicationID, $shareTitle, $shareDescription = "", $shareUrl = false){
 		if (isset($applicationID)){
 			$fbTitle = str_replace(" ", "%20", $shareTitle);
-			$fbSescription = str_replace(" ", "%20", $description);
+			$fbDescription = str_replace(" ", "%20", $shareDescription);
 
-			if ($shareUrl === false){
+			if ($shareUrl == false){
 				$shareUrl = atlasui_url_address("", false);
 			}
 
