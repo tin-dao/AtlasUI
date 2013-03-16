@@ -1,6 +1,6 @@
 <?php
 	
-	function atlasui_string_clean($uncleanString, $cleaningLevel, $cleanStringTags)
+	function atlasui_string_clean($uncleanString, $cleaningLevel = 1, $cleanStringTags = true)
 	{
 		if ($cleaningLevel = (0 || 1))
 		{
