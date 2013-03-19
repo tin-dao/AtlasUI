@@ -11,8 +11,8 @@
 		include("main/atlasui_ftp_login.php");
 		include("main/atlasui_mysqli_result.php");
 		include("main/atlasui_sql_connect.php");
-		include("main/atlasui_string_clean.php");
 		include("main/opengraph.php");
+		include("main/strings.php");
 		include("main/speed_library.php");
 
 	/* Import AtlasUI Browser Interaction Modules */
