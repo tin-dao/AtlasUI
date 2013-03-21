@@ -1,6 +1,6 @@
 <?php
 
-	function facebook_like($applicationID, $shareUrl = false, $buttonColors = "light", $buttonLayout = "button_count", $buttonSend = "false", $buttonShowFaces = "false", $buttonHeight = "21", $buttonWidth = "55"){
+	function facebook_like($applicationID, $shareUrl = false, $buttonColors = "light", $buttonLayout = "button_count", $buttonSend = "false", $buttonShowFaces = "false", $buttonHeight = "21", $buttonWidth = "75"){
 		if (isset($applicationID)){
 			print "<iframe src=\"//www.facebook.com/plugins/like.php?href=";
 
