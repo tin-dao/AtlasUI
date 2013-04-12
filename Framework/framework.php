@@ -17,6 +17,7 @@
 
 	/* Import AtlasUI Browser Interaction Modules */
 	
+		include("browser/atlasui_http_request.php");
 		include("browser/notification.php");
 		include("browser/redirect.php");
 	

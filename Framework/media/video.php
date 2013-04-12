@@ -1,6 +1,6 @@
 <?php
 
-  function video($type, $preload, $url, $height, $width)
+  function atlasui_video($type, $preload, $url, $height, $width)
   {
 
       print "<video type=\"video/$type\" controls=\"controls\"";

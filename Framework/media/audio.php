@@ -1,6 +1,6 @@
 <?php
 
-  function audio($type, $preload, $url){
+  function atlasui_audio($type, $preload, $url){
     print "<audio type=\"audio/$type\" controls=\"controls\" src=\"$url\"";
     if ($preload == "true")
     {
