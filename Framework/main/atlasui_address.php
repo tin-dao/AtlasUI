@@ -9,8 +9,7 @@
 		{
 			$ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
 		}
-		else
-		{
+		else{
 			$ipaddress = $_SERVER['REMOTE_ADDR'];
 		}
 

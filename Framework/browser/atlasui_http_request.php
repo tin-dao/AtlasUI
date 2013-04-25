@@ -21,6 +21,13 @@
 		}
 		
 		if ($httpRequestOptions !== null){ // If the request header options are not NULL
+			foreach($httpRequestOptions as $key => $httpRequestOptionValue){
+				if (strpos($key, "CURLOPT") !== false){
+					curl_setopt($key, $httpRequestOptionValue);
+					unset($httpRequestOptions[$key]);
+				}
+			}
+
 			$httpRequestHeaders = array_merge($httpRequestHeaders, $httpRequestOptions); // Merge the content-length header and the other http request headers.
 		}
 		
