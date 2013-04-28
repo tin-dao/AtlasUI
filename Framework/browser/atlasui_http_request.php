@@ -54,6 +54,8 @@
 			$curlErrorCodeReturned = settype($httpRequestError, "string"); // Convert the curl error from an integer to a string.
 			return $curlErrorCodes[$curlErrorCodeReturned]; // Return the error message.
 		}
+
+		curl_close($httpRequest);
 		
 	}
 	
