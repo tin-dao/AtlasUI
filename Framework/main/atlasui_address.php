@@ -18,7 +18,14 @@
 
 	function atlasui_url_address($inputUrl = "", $urlEncode = true){
 		if (!isset($inputUrl) || ($inputUrl == "")){
-			$inputUrl = $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+			if ((strlen($_SERVER['HTTPS']) > 0) || (strpos($_SERVER['HTTPS'], "on") !== false)){
+				$protocol = "https://";
+			}
+			else{
+				$protocol = "http://";
+			}
+
+			$inputUrl = $protocol . $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"];
 		}
 
 		if ($urlEncode == true){
