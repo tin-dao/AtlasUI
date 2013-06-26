@@ -9,7 +9,7 @@
 	}
   
  	function youtubePlayer($youtubeVideoID, $youtubeVideoDefinition = "720", $youtubePrivacyMode = false){
-		if ((isset($youtubeVideoID)) && (strlen($youtubeVideoID) > 0){
+		if ((isset($youtubeVideoID)) && (strlen($youtubeVideoID) > 0)){
 			$youtubeVideoDefinition_Height = str_replace(array("360", "480", "720"), array("640", "853", "1280"), $youtubeVideoDefinition);
 			print "<iframe width=\"$youtubeVideoDefinition\" width=\"$youtubeVideoDefinition\" height=\"$youtubeVideoDefinition_Height\" ";
 
