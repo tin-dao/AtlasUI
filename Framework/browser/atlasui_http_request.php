@@ -8,7 +8,7 @@
 		curl_setopt($httpRequest, CURLOPT_CONNECTTIMEOUT, 30); // If the URL doesn't respond within 30 seconds, then we'll assume there is an issue (like the site being slow).
 		curl_setopt($httpRequest, CURLOPT_FAILONERROR, true); // Fails if HTTP code is 400 or greater (other examples: 403, 500)
 		curl_setopt($httpRequest, CURLOPT_FOLLOWLOCATION, true); // Follows PHP location header or redirects.
-		curl_setopt($httpRequest, CURLOPT_MAXREDIRS, 5); // If there is more than 5 redirects from a URL, we assume it's the start of an infinite loop and we break it.
+		curl_setopt($httpRequest, CURLOPT_MAXREDIRS, 3); // If there is more than 3 redirects from a URL, we assume it's the start of an infinite loop and we break it.
 		curl_setopt($httpRequest, CURLOPT_RETURNTRANSFER, true); // Make sure to return as a string value rather than output it.
 		curl_setopt($httpRequest, CURLOPT_SSL_VERIFYPEER, false);
 			
@@ -34,11 +34,11 @@
 		curl_setopt($httpRequest, CURLOPT_HTTPHEADER, $httpRequestHeaders); // Set the CURLOPT_HTTPHEADERS to our value.
 		
 		if ($httpRequestMethod == "GET"){
-			curl_setopt($httpRequest, CURLOPT_URL, $httpRequestUrl . "?" . $httpRequestData);
+			curl_setopt($httpRequest, CURLOPT_URL, $httpRequestUrl . "?" . $httpRequestData); // Set the CURLOPT_URL to be the $httpRequestUrl plus the name/value pairs for GET.
 		}
 		else{
-			curl_setopt($httpRequest, CURLOPT_URL, $httpRequestUrl);
-			curl_setopt($httpRequest, CURLOPT_POSTFIELDS, $httpRequestData);
+			curl_setopt($httpRequest, CURLOPT_URL, $httpRequestUrl); // Set the CURLOPT_URL to be the $httpRequestUrl
+			curl_setopt($httpRequest, CURLOPT_POSTFIELDS, $httpRequestData); // Since the method is not GET, we'll be putting the data in POST fields (doesn't mean the method is POST however)
 		}
 		
 		$httpResponse = curl_exec($httpRequest); // Execute the request and save it in response.
@@ -55,7 +55,7 @@
 			return $curlErrorCodes[$curlErrorCodeReturned]; // Return the error message.
 		}
 
-		curl_close($httpRequest);
+		curl_close($httpRequest); // Close CURL
 		
 	}
 	
