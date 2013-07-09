@@ -13,7 +13,9 @@
 		curl_setopt($httpRequest, CURLOPT_SSL_VERIFYPEER, false);
 			
 		if ($httpRequestData !== null){ // If the request data (whether it is POST, DELETE, GET, UPDATE, etc) is not NULL
-			$httpRequestData = http_build_query($httpRequestData); // Build a query out of it. for instance array("3" => "hi", "4" => "goodbye") would be 3=hi&4="goodbye"
+			if (gettype($httpRequestData) == "array"){
+				$httpRequestData = http_build_query($httpRequestData); // Build a query out of it. for instance array("3" => "hi", "4" => "goodbye") would be 3=hi&4="goodbye"
+			}
 			$httpRequestHeaders = array("Content-length: " . strlen($httpRequestData)); // Set the content length.
 		}
 		else{
