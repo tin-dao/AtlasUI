@@ -1,13 +1,10 @@
 <?php
 
-	function flattr_button($thingID, $thingName)
-	{
-		if ($thingID == "")
-		{
+	function flattr_button($thingID, $thingName){
+		if ($thingID == ""){
 			print "You are missing a required variable, please enter it now.";
 		}
-		elseif ($thingName == "")
-		{
+		elseif ($thingName == "")	{
 			print "You are missing a required variable, please enter it now.";
 		}
 		else{

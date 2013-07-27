@@ -1,19 +1,9 @@
 <?php
 
-	function google_plus_asyncInclude(){
-		print "<script type=\"text/javascript\">";
-			print "(function() {";
-		    	print "var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;";
-		    	print "po.src = 'https://apis.google.com/js/plusone.js';";
-		    	print "var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);";
-		 	print "})();";
-		print "</script>";
-	}
-
 	function google_plus_badge($googlePlusID, $googlePlusBadgeSize = "300"){
 		if (isset($googlePlusID)){
 			print "<div class=\"g-plus\" data-width=\"$googlePlusBadgeSize\" data-href=\"//plus.google.com/$googlePlusID\" data-rel=\"publisher\"></div>";
-			google_plus_asyncInclude();
+			googleIncludeJSScript();
 		}
 		else{
 			print "error_invalid_id";
@@ -32,7 +22,7 @@
 
 		print "data-href=\"$shareUrl\"></div>";
 
-		google_plus_asyncInclude();
+		googleIncludeJSScript();
 	}
 
 	function google_plus_share($shareUrl = "", $googlePlusAnnotation = "horizontal", $googlePlusSize = "medium", $googlePlusWidth = "120"){
@@ -52,7 +42,7 @@
 		}
 
 		print "data-href=\"$shareUrl\"></div>";
-		google_plus_asyncInclude();
+		googleIncludeJSScript();
 	}
 	
 ?>

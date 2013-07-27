@@ -41,5 +41,7 @@
 		include("social/reddit.php");
 		include("social/spotify.php");
 		include("social/twitter.php");
+		include("social/utilities.php");
+		include("social/youtube.php");
 
 ?>

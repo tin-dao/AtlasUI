@@ -1,56 +1,95 @@
 <?php
 
-	function facebook_like($applicationID, $shareUrl = false, $buttonColors = "light", $buttonLayout = "button_count", $buttonSend = "false", $buttonShowFaces = "false", $buttonHeight = "21", $buttonWidth = "75"){
+	function facebookFacepile($applicationID, $facebookPage, $actions = "like", $maxRows = 2, $avatarSize = "medium", $colorScheme = "light", $showCount = false, $showBorder = false, $width = 200){
+		if ((isset($applicationID)) && (strlen($facebookPage) > 0)){
+			print "<div class=\"fb-facepile\"";
+				$fbGlobalAttributes = html5GlobalDataAttributes(
+					array(
+						"href" => "https://www.facebook.com/" . $facebookPage, "action" => $actions, "max-rows" => $maxRows, "size" => $avatarSize,
+						 "colorscheme" => $colorScheme, "show-count" => $showCount, "show-border" => $showBorder, "width" => $width
+					)
+				);
+				print $fbGlobalAttributes;
+			print ">";
+			print "</div>";
+			
+			facebookIncludeJSScript($applicationID);
+		}
+		else{
+			print "add_appID_and_fbpage";
+		}
+	}
+
+	function facebookFollow($applicationID, $facebookUser, $colorScheme = "light", $buttonLayout = "standard", $showFaces = true, $width = 450){
+		if ((isset($applicationID)) && (strlen($facebookUser) > 0)){
+			print "<div class=\"fb-follow\"";
+				$fbGlobalAttributes = html5GlobalDataAttributes(
+					array(
+						"href" => "https://www.facebook.com/" . $facebookUser, "colorscheme" => $colorScheme, 
+						"show-faces" => $showFaces, "width" => $width
+					)
+				);
+				
+				print $fbGlobalAttributes;
+				
+				if (atlasui_string_check($buttonLayout, array("standard", "button_count", "box_count")) !== false){
+					print "data-layout=\"" . $buttonLayout . "\"";
+				}
+			print ">";
+			print "</div>";
+			
+			facebookIncludeJSScript($applicationID);
+		}
+		else{
+			print "add_appID_and_fbuser";
+		}
+	}
+	
+	function facebookLikeButton($applicationID, $likeUrl = "generate", $likeVerb = "like", $colorScheme = "light", $buttonLayout = "standard", $showFaces = false, $width = 450){
 		if (isset($applicationID)){
-			print "<iframe src=\"//www.facebook.com/plugins/like.php?href=";
-
-				if ($shareUrl == false){
-					$shareUrl = atlasui_url_address();
+			print "<div class=\"fb-like\" ";
+				if ($likeUrl == "generate"){
+					$likeUrl = atlasui_url_address("", false);
 				}
-				else{
-					$shareUrl = atlasui_url_address($shareUrl, true);
+				
+				$fbGlobalAttributes = html5GlobalDataAttributes(
+					array(
+						"href" => $likeUrl, "action" => $likeVerb, "colorscheme" => $colorScheme, 
+						"show-faces" => $showFaces, "font" => "segoe ui", "width" => $width
+					)
+				);
+				print $fbGlobalAttributes;
+				
+				if (atlasui_string_check($buttonLayout, array("standard", "button_count", "box_count")) !== false){
+					print "data-layout=\"" . $buttonLayout . "\"";
 				}
-
-				print "$shareUrl&amp;send=$buttonSend&amp;layout=$buttonLayout&amp;width=$buttonWidth&amp;show_faces=$buttonShowFaces&amp;font=segoe+ui&amp;colorscheme=$buttonColors&amp;action=like&amp;height=21&amp;appId=$applicationID\" 
-					scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:$buttonWidth" . "px; height:$buttonHeight" . "px;\" allowTransparency=\"true\">";
-			print "</iframe>";
+			print ">";
+			print "</div>";
+			
+			facebookIncludeJSScript($applicationID);
 		}
 		else{
 			print "error_empty_appid";
 		}
 	}
 
-	function facebook_share($applicationID, $shareTitle, $shareDescription = "", $shareUrl = false){
-		if (isset($applicationID)){
-			$fbTitle = str_replace(" ", "%20", $shareTitle);
-			$fbDescription = str_replace(" ", "%20", $shareDescription);
-
-			if ($shareUrl == false){
-				$shareUrl = atlasui_url_address("", false);
-			}
-
-			print "<a href=\"http://www.facebook.com/dialog/feed?app_id=$applicationID&link=$shareUrl&name=$fbTitle";
-				if ($fbDescription !== "")
-				{
-					print "&description=$fbDescription";
-				}
-				
-				print "&redirect_uri=$shareUrl\" target=\"_blank\"";
-				print "style=\"
-					height: 28px;
-					width: 75px;
-					font-family: arial;
-					font-size: 14px;
-					color: #fafafa;
-					line-height: 28px;
-					text-align: center;
-					text-decoration: none;
-					background-color: #3b5998 !important;
-					border: 0px;\"";
-			print ">Share</a>";
+	function facebookLikeBox($applicationID, $facebookPage, $colorScheme = "light", $showBorder = true, $showFaces = true, $showStream = true, $showHeader = true, $height = 556, $width = 292){
+		if ((isset($applicationID)) && (strlen($facebookPage) > 0)){
+			print "<div class=\"fb-like-box\"";
+				$fbGlobalAttributes = html5GlobalDataAttributes(
+					array(
+						"href" => "https://www.facebook.com/" . $facebookPage, "colorscheme" => $colorScheme, "show-border" => $showBorder,
+						"show-faces" => $showFaces, "show-stream" => $showStream, "show-header" => $showHeader, "height" => $height, "width" => $width
+					)
+				);
+				print $fbGlobalAttributes;
+			print ">";
+			print "</div>";
+			
+			facebookIncludeJSScript($applicationID);
 		}
 		else{
-			print "error_empty_appid";
+			print "add_appID_and_fbpage";
 		}
 	}
 	
