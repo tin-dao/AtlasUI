@@ -1,5 +1,24 @@
 <?php
 
+	function facebookEmbeddedPost($applicationID, $facebookPost){ // Temporary social plugin implementation for Embedded Posts until no fb x
+		if ((isset($applicationID)) && (strlen($facebookPost) > 0)){
+			print "<div class=\"fb-post\" ";
+				$fbGlobalAttributes = html5GlobalDataAttributes(
+					array(
+						"href" => $facebookPost
+					)
+				);
+				print $fbGlobalAttributes;
+			print ">";
+			print "</div>";
+			
+			facebookIncludeJSScript($applicationID);
+		}
+		else{
+			print "add_appID_and_fbpost";
+		}
+	}
+	
 	function facebookFacepile($applicationID, $facebookPage, $actions = "like", $maxRows = 2, $avatarSize = "medium", $colorScheme = "light", $showCount = false, $showBorder = false, $width = 200){
 		if ((isset($applicationID)) && (strlen($facebookPage) > 0)){
 			print "<div class=\"fb-facepile\"";
