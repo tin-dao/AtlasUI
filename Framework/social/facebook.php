@@ -1,6 +1,6 @@
 <?php
 
-	function facebookEmbeddedPost($applicationID, $facebookPost){ // Temporary social plugin implementation for Embedded Posts until no fb x
+	function facebookEmbeddedPost($applicationID, $facebookPost){
 		if ((isset($applicationID)) && (strlen($facebookPost) > 0)){
 			print "<div class=\"fb-post\" ";
 				$fbGlobalAttributes = html5GlobalDataAttributes(
