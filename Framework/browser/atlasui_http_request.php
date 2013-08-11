@@ -5,7 +5,7 @@
 		
 		/* Setting some essential cURL options */
 		curl_setopt($httpRequest, CURLOPT_CUSTOMREQUEST, $httpRequestMethod); // Useful if the method is DELETE or something more obscure.
-		curl_setopt($httpRequest, CURLOPT_CONNECTTIMEOUT, 30); // If the URL doesn't respond within 30 seconds, then we'll assume there is an issue (like the site being slow).
+		curl_setopt($httpRequest, CURLOPT_CONNECTTIMEOUT, 15); // If the URL doesn't respond within 15 seconds, then we'll assume there is an issue (like the site being slow).
 		curl_setopt($httpRequest, CURLOPT_FAILONERROR, true); // Fails if HTTP code is 400 or greater (other examples: 403, 500)
 		curl_setopt($httpRequest, CURLOPT_FOLLOWLOCATION, true); // Follows PHP location header or redirects.
 		curl_setopt($httpRequest, CURLOPT_MAXREDIRS, 3); // If there is more than 3 redirects from a URL, we assume it's the start of an infinite loop and we break it.
@@ -23,17 +23,29 @@
 		}
 		
 		if ($httpRequestOptions !== null){ // If the request header options are not NULL
-			foreach($httpRequestOptions as $key => $httpRequestOptionValue){
-				if (strpos($key, "CURLOPT") !== false){
-					curl_setopt($key, $httpRequestOptionValue);
-					unset($httpRequestOptions[$key]);
+			if (gettype($httpRequestOptions) == "array"){
+				foreach($httpRequestOptions as $key => $httpRequestOptionValue){
+					if (is_int($key) == true){
+						curl_setopt($httpRequest, $key, $httpRequestOptionValue);
+					}
+					else{
+						if ($httpRequestOptionValue !== null){
+							$httpRequestHeaders[] = $key . ": " . $httpRequestOptionValue;
+						}
+						else{
+							$httpRequestHeaders[] = $key;
+						}
+					}
 				}
 			}
-
-			$httpRequestHeaders = array_merge($httpRequestHeaders, $httpRequestOptions); // Merge the content-length header and the other http request headers.
+			else{
+				$httpRequestHeaders[] = $httpRequestOptions;
+			}
 		}
 		
-		curl_setopt($httpRequest, CURLOPT_HTTPHEADER, $httpRequestHeaders); // Set the CURLOPT_HTTPHEADERS to our value.
+		if (count($httpRequestHeaders) > 0){
+			curl_setopt($httpRequest, CURLOPT_HTTPHEADER, $httpRequestHeaders); // Set the CURLOPT_HTTPHEADER to our value.
+		}
 		
 		if ($httpRequestMethod == "GET"){
 			curl_setopt($httpRequest, CURLOPT_URL, $httpRequestUrl . "?" . $httpRequestData); // Set the CURLOPT_URL to be the $httpRequestUrl plus the name/value pairs for GET.

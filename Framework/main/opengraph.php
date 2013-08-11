@@ -12,7 +12,7 @@
 		}
 		
 		// Determines if the type is actually a location or not as no OpenGraph type is more than 15 characters long
-		if (strlen($type)){
+		if (strlen($type) <= 15){
 			print "<meta property=\"og:type\" content=\"$type\" />";
 		}
 		else{
