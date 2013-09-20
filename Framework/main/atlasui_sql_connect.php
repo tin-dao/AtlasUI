@@ -1,25 +1,13 @@
 <?php
 	
-	function atlasui_sql_connect($type, $location, $database, $user, $password)
-	{
-		if ($type == "mysql"){
-			$mysql_var = mysql_connect($location, $user, $password);
-			if (!$mysql_var){
-				die('Could not connect: ' . mysql_error());
-			}
-			else{
-				mysql_select_db($database, $mysql_var);
-			}
-			return $go;
+	function atlasui_sql_connect($location, $database, $user, $password){
+		$mysqlInstance = mysqli_connect($location, $user, $password, $database); // Create a new MySQLi instance
+
+		if (!$mysqlInstance){ // If the MySQLi instance failed to connect
+			return false; // Return a boolean FALSE signifying that the connection failed
 		}
-		elseif ($type == "mysqli"){
-			$mysqli_var = new mysqli($location, $user, $password, $database);
-			if (!$mysqli_var){
-				die("Could not connect: ") . mysqli_error($mysqli_var);
-			}
-			else{
-				return $mysqli_var;
-			}
+		else{ // If the connection was a success
+			return $mysqlInstance; // Return the MySQLi instance
 		}
 	}
 	
