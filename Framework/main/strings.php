@@ -1,5 +1,26 @@
 <?php
 
+	function atlasui_random_string($maxLength = 10){ // Function to generate random hash
+		function randomString(){ // Function to generate random string
+			$alphabet = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"); // Alphabet, obviously
+			$randomString = ""; // Random string generated
+			$repetitionCount = 0; // Repetition count, max is 20/21
+
+			while($repetitionCount < 20){ // While the repetitionCount is less than 20 (last repetition is on int 19)
+				$randomString = $randomString . $alphabet[rand(0, 23)]; // randomString PLUS a random letter (array[random 0 to 23])
+				$repetitionCount = $repetitionCount + 1;
+			}
+
+			return $randomString; // Return the random string
+		}
+
+		$randomNumber = settype(rand(100000, 999999), "string"); // Generate a random number as a string
+		$randomString = randomString(); // Generate a random string
+
+		$randomHash_Long = sha1(str_shuffle($randomNumber . $randomString . date("dmyhis"))); // Generate an sha1 hash of the shuffled version of the string(num + str + date)
+		return substr($randomHash_Long, 0, $maxLength); // Return hash
+	}
+
 	function atlasui_string_check($haystackString, $needleStringArray){
 		$haystackContainsNeedleBoolean = false;
 		foreach($needleStringArray as $key => $needleString){

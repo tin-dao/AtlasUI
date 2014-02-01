@@ -1,11 +1,9 @@
 <?php
 
-	function notification($title, $message)
-	{
+	function atlasui_notification($title, $message){
 		print "<link rel=\"stylesheet\" type=\"text/css\" href=\"Framework/all.css\" />";
 		print "<div class=\"atlasui_notification\">";
-			if ($title !== "")
-			{
+			if ($title !== ""){
 				print "<div id=\"atlasui_notification_title\">$title</div>";
 			}
 			else{
@@ -14,5 +12,5 @@
 			print "<div id=\"atlasui_notification_message\">$message</div>";
 		print "</div>";
 	}
-	
+
 ?>
