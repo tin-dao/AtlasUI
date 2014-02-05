@@ -15,7 +15,7 @@
 				return $ftpConnection;
 			}
 			else{
-				return "atlasui_ftp_login has invalid credentials. Trying to connect to $ftpServer with $ftpUsername and $ftpPassword";
+				return "atlasui_ftp_login has invalid credentials for connecting to $ftpServer.";
 			}
 		}
 		else{

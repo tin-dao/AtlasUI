@@ -1,9 +1,9 @@
 <?php
 
  	function youtubePlayer($youtubeVideoID, $youtubeVideoDefinition = 720, $youtubePrivacyMode = false){
-		if ((isset($youtubeVideoID)) && (strlen($youtubeVideoID) > 0)){
+		if ($youtubeVideoID !== null){
 			$youtubeVideoDefinition_Width = round(($youtubeVideoDefinition * 1.777), 0, PHP_ROUND_HALF_UP);
-			print "<iframe width=\"$youtubeVideoDefinition\" width=\"$youtubeVideoDefinition_Width\" height=\"$youtubeVideoDefinition\" ";
+			print "<iframe width=\"$youtubeVideoDefinition_Width\" width=\"$youtubeVideoDefinition_Width\" height=\"$youtubeVideoDefinition\" ";
 
 				if ($youtubePrivacyMode == false){
 					$youtubeEmbedUrl = "https://www.youtube.com/embed/" . $youtubeVideoID;

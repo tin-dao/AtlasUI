@@ -8,8 +8,8 @@
 	/* Import AtlasUI Main Modules */
 
 		include("main/atlasui_address.php");
-		include("main/atlasui_encrypt.php");
 		include("main/atlasui_ftp_login.php");
+		include("main/atlasui_hashing.php");
 		include("main/atlasui_mysqli_result.php");
 		include("main/atlasui_sql_connect.php");
 		include("main/opengraph.php");
@@ -19,7 +19,6 @@
 	/* Import AtlasUI Browser Interaction Modules */
 	
 		include("browser/atlasui_http_request.php");
-		include("browser/notification.php");
 		include("browser/redirect.php");
 	
 	/* Import Math Framework / Library */

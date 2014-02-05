@@ -1,12 +1,10 @@
 <?php
 
 	function atlasui_ip_address(){
-		if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
-		{
+		if (!empty($_SERVER['HTTP_CLIENT_IP'])){   //check ip from share internet
 			$ipaddress = $_SERVER['HTTP_CLIENT_IP'];
 		}
-		elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))   //to check ip is pass from proxy
-		{
+		elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){   //to check ip is pass from proxy
 			$ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
 		}
 		else{
@@ -16,9 +14,9 @@
 		return $ipaddress;
 	}
 
-	function atlasui_url_address($inputUrl = "", $urlEncode = true){
-		if (strlen($inputUrl) > 0){
-			if ((strlen($_SERVER['HTTPS']) > 0) || (strpos($_SERVER['HTTPS'], "on") !== false)){
+	function atlasui_url_address($inputUrl = "", $urlEncode = false){
+		if ($inputUrl == null){
+			if ($_SERVER["HTTPS"] !== null){
 				$protocol = "https://";
 			}
 			else{

@@ -1,16 +1,20 @@
 <?php
 
-	function flattr_button($thingID, $thingName){
-		if ($thingID == ""){
-			print "You are missing a required variable, please enter it now.";
-		}
-		elseif ($thingName == "")	{
+	function flattr_button($thingID, $thingName, $thingDescription){
+		if (($thingID == null) || ($thingName == null) || ($thingDescription == null)){
 			print "You are missing a required variable, please enter it now.";
 		}
 		else{
-			print "<a href=\"http://flattr.com/thing/" . $thingID . "/" . $thingName . "\" target=\"_blank\">";
-				print "<img src=\"http://api.flattr.com/button/flattr-badge-large.png\" alt=\"Flattr this\" title=\"Flattr this\" border=\"0\" />";
-			print "</a>";
+			print "<script type=\"text/javascript\" src=\"//api.flattr.com/js/0.6/load.js?mode=auto\"></script>";
+			print "
+				<a class=\"FlattrButton\" style=\"display:none;\"
+					title=\"$thingName\"
+					data-flattr-uid=\"$thingID\"
+					href=\"" . atlasui_url_address() . "\"
+				>
+					$thingDescription
+				</a>
+			";
 		}
 	}
 	

@@ -1,19 +1,15 @@
 <?php
 
-	function speed_library($library, $version){
-		$acceptableLibraries = array("AngularJS",  "Chromeframe", "Dojo", "ExtCore", "jQuery", "jQuery UI", 
-		"MooTools", "Prototype", "script.aculo.us", "SWFObject", "WebFont");
-		$acceptableIncludes = array("angularjs||angular.min.js", "chrome-frame||CFInstall.min.js", "dojo||dojo/dojo.js", "ext-core||ext-core.js",
-		"jquery||jquery.min.js", "jqueryui||jquery-ui.min.js", "mootools||mootools-yui-compressed.js", "prototype||prototype.js",
-		"swfobject||swfobject.js", "webfont||webfont.js");
+	function speed_library($library, $version){ // A utility that allows for easy fetching of Google-hosted web libraries
+		$library = strtolower(trim($library)); // Remove whitespace and lowercase the library
 
-		$determineLibrary = str_replace($acceptableLibraries, $acceptableIncludes, $library);
-		$determineLibrary_ExplodeToInterpret = explode("||", $determineLibrary);
+		$acceptableIncludes = array( /* An array of currently accepted Google Hosted Libraries */
+			"angularjs" => "angular.min.js", "chrome-frame" => "CFInstall.min.js", "dojo" => "dojo/dojo.js", "ext-core" => "ext-core.js",
+			"jquery" => "jquery.min.js", "jqueryui" => "jquery-ui.min.js", "mootools" => "mootools-yui-compressed.js", "prototype" => "prototype.js",
+			"swfobject" => "swfobject.js", "webfont" => "webfont.js"
+		);
 		
-		$include = $determineLibrary_ExplodeToInterpret[0] . "/$version/" . $determineLibrary_ExplodeToInterpret[1];
-		
-		print "<script src=\"//ajax.googleapis.com/ajax/libs/$include\"></script>";
-		
+		print "<script src=\"//ajax.googleapis.com/ajax/libs/" . $library . "/" . $version . "/" . $acceptableIncludes[$library] . "\"></script>";
 	}
 
 ?>
