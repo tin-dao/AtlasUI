@@ -1,6 +1,6 @@
 <?php
 
-	function speed_library($library, $version){ // A utility that allows for easy fetching of Google-hosted web libraries
+	function atlasui_speed_library($library, $version){ // A utility that allows for easy fetching of Google-hosted web libraries
 		$library = strtolower(trim($library)); // Remove whitespace and lowercase the library
 
 		$acceptableIncludes = array( /* An array of currently accepted Google Hosted Libraries */
