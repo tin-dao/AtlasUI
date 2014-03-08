@@ -10,6 +10,7 @@
 	include("backend/main/atlasui_hashing.php");
 	include("backend/main/atlasui_mysqli_result.php");
 	include("backend/main/atlasui_sql_connect.php");
+	include("backend/main/atlasui_unique_array.php");
 	include("backend/main/opengraph.php");
 	include("backend/main/speed_library.php");
 	include("backend/main/strings.php");
